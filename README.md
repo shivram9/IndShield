@@ -2,10 +2,7 @@
 
 **IndustryXpert** is a web application designed to revolutionize industrial safety protocols by leveraging advanced technologies. It empowers organizations to create a safer and more secure work environment for personnel and equipment.
 
-**Demo Video and blog**
 
-You can see a demo of IndustryXpert in action here: [IndustryXpert Demo](https://youtu.be/-c04sL4nzXQ)<br>
-You can give a read to our blog here: [IndustryXpert blog](https://dev.to/sufyan555/industryxpert-elevating-industrial-safety-and-efficiency-3dek)
 
 **Key Features:**
 
