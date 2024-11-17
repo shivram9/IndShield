@@ -13,6 +13,7 @@ class fire_detection():
         self.confidence = conf  # Placeholder for compatibility
         self.sound_playing = False  # Flag to prevent multiple sound playbacks
         self.fire_detected_time = None  # Time when fire was first detected
+
         self.confirmation_delay = confirmation_delay  # Delay before confirming fire (in seconds)
 
     def process(self, img, flag=True):
@@ -31,7 +32,7 @@ class fire_detection():
         upper_fire = np.array([35, 255, 255])  # Upper HSV bound for fire-like colors
         
         # Threshold the HSV image to get fire-like colors
-        mask = cv2.inRange(hsv_img, lower_fire, upper_fire)
+        mask = cv2.inRange(hsv_img, lower_fire, upper_fire)   #Upper and Lower bound defined kiya hai
         
         # Optionally clean up the mask using morphological operations
         mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
