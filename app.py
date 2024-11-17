@@ -13,6 +13,12 @@ from models.gear_detection import gear_detection
 from models.alert import alert
 from models.motion_amp import amp
 
+from flask import jsonify
+from flask_socketio import SocketIO, emit
+import random
+import time
+from threading import Thread
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'the random string'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
@@ -26,6 +32,7 @@ ALLOWED_EXTENSIONS = {"mp4"}
 
 db = SQLAlchemy(app)
 login_manager = LoginManager(app)
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -66,6 +73,23 @@ class Complaint(db.Model):  # Complaint table
 r_zone=people_detection("models/yolov8n.pt")
 fire_det=fire_detection("models/fire.pt",conf=0.60)
 gear_det=gear_detection("models/gear.pt")
+
+
+
+# Initialize SocketIO
+socketio = SocketIO(app)
+
+# Background thread for sending live data
+def send_real_time_data():
+    while True:
+        data = {
+            "time": datetime.now().strftime("%H:%M:%S"),
+            "metric1": random.uniform(20, 50),  # Example metric 1
+            "metric2": random.uniform(100, 200),  # Example metric 2
+        }
+        socketio.emit('update_chart', data)
+        time.sleep(2)  # Update every 2 seconds
+
 
 
 def allowed_file(filename):
@@ -295,6 +319,18 @@ def video_feed(cam_id):
             return "Something wrong with Cam Details !!"
     else:
         return "Camera details not found."
+    
+
+@socketio.on('connect')
+def start_thread():
+    emit('status', {'message': 'Connected to Real-Time Analytics'})
+    if not socketio.start_background_task(send_real_time_data):
+        socketio.start_background_task(send_real_time_data)
+
+@app.route('/analytics')
+@login_required
+def analytics():
+    return render_template('analytics.html')
 
 def add_to_db(results, frame, alert_name, user_id=None):
     if results[0]:

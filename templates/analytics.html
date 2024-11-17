@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style_dash.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io/client-dist/socket.io.js"></script>
+    <title>AI Real-Time Analytics</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        {% include 'sidebar.html' %}
+        <div class="main p-3">
+            <h1 class="text-center">Real-Time Analytics</h1>
+            <div class="chart-container" style="width: 80%; margin: auto;">
+                <canvas id="realTimeChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('realTimeChart').getContext('2d');
+        const realTimeChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Metric 1 (e.g., Temperature)',
+                        data: [],
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        fill: false,
+                        tension: 0.4,
+                    },
+                    {
+                        label: 'Metric 2 (e.g., Vibration)',
+                        data: [],
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        fill: false,
+                        tension: 0.4,
+                    }
+                ]
+            },
+            options: {
+                animation: {
+                    duration: 1000,
+                    easing: 'easeInOutBounce'
+                },
+                scales: {
+                    x: { title: { display: true, text: 'Time' } },
+                    y: { title: { display: true, text: 'Values' } }
+                },
+                plugins: {
+                    legend: { display: true },
+                },
+            }
+        });
+
+        const socket = io.connect(window.location.origin);
+
+        socket.on('update_chart', (data) => {
+            const { time, metric1, metric2 } = data;
+            realTimeChart.data.labels.push(time);
+            realTimeChart.data.datasets[0].data.push(metric1);
+            realTimeChart.data.datasets[1].data.push(metric2);
+
+            if (realTimeChart.data.labels.length > 10) {
+                realTimeChart.data.labels.shift();
+                realTimeChart.data.datasets[0].data.shift();
+                realTimeChart.data.datasets[1].data.shift();
+            }
+
+            realTimeChart.update();
+        });
+
+        socket.on('status', (message) => {
+            console.log(message.message);
+        });
+    </script>
+</body>
+
+</html>
