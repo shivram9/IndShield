@@ -1,6 +1,6 @@
-## IndustryXpert: A Cutting-Edge Web App for Enhanced Industrial Safety
+## IndShield: A Cutting-Edge Web App for Enhanced Industrial Safety
 
-**IndustryXpert** is a web application designed to revolutionize industrial safety protocols by leveraging advanced technologies. It empowers organizations to create a safer and more secure work environment for personnel and equipment.
+**IndShield** is a web application designed to revolutionize industrial safety protocols by leveraging advanced technologies. It empowers organizations to create a safer and more secure work environment for personnel and equipment.
 
 
 
