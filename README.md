@@ -37,7 +37,8 @@
 * **OpenCV:** This open-source computer vision library is likely used for image and video processing tasks like frame capturing, object detection bounding boxes, and motion amplification.
 
 Running the application typically involves:
-
+python  -m venv .env
+.env/Scripts/activate
 1. Installing required dependencies using `pip install -r requirements.txt`.
 2. Setting up the database (likely SQLite in this case) and creating the necessary tables as defined by the models.
 3. Running the application using `python app.py`.
