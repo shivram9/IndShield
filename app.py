@@ -192,7 +192,7 @@ def manage_cam_page():
 @login_required
 def getting_cam_details():
     if request.method == 'POST':
-        camid = request.form['Cam_id']
+        camid = request.form['cam_id']
 
         fire_bool = "fire" in request.form
         pose_bool = "pose_alert" in request.form
@@ -352,4 +352,3 @@ def process_frames(camid, region, flag_r_zone=False, flag_pose_alert=False, flag
 
 if __name__=="__main__":
     app.run(debug=True)
-
