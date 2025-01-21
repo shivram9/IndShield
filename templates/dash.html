@@ -17,20 +17,27 @@
         {% include 'sidebar.html' %}
         <div class="main p-3 d-flex justify-content-center align-items-center">
             <div class="text-center">
+
                 <div id="live-feeds">
                     {% if cameras %}
                         {% for camera in cameras %}
-                            <h3>Camera: {{ camera.cam_id }}</h3>
-                            <div class="d-flex justify-content-center">
-                                <iframe src="/video_feed/{{ camera.cam_id }}" width="1000" height="500"></iframe>
+                            <h3>Camera: {{ camera.Cam_id }}</h3>
+                            <div class="d-flex justify-content-center position-relative">
+                                <iframe src="/video_feed/{{ camera.Cam_id }}" width="1000" height="500" class="video-feed"></iframe>
+                                <!-- Overlay for Pose Alerts -->
+                                
+                                <div id="hand-alert-{{ camera.Cam_id }}" class="hand-alert">
+                                    <!-- Dynamic hand gesture alert will be updated via JS -->
+                                </div>
                             </div>
                         {% endfor %}
                     {% else %}
-                    <div class="alert alert-dark" role="alert">
-                        No cameras Found!!.. 
-                    </div>
+                        <div class="alert alert-dark" role="alert">
+                            No cameras Found!!
+                        </div>
                     {% endif %}
                 </div>
+                
             </div>
         </div>
     </div>

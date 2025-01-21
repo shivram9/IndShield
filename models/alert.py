@@ -1,80 +1,76 @@
-import math
 import cv2
-import numpy as numpy
-import mediapipe as mp
-mp_pose = mp.solutions.pose
-pose = mp_pose.Pose(static_image_mode=True, min_detection_confidence=0.3, model_complexity=2)
-def detectpose(image):
-    output_image = image.copy()
-    imageRGB = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    results = pose.process(imageRGB)
-    height, width, _ =image.shape
-    landmarks = []
-    if results.pose_landmarks:
-        for landmark in results.pose_landmarks.landmark:
-            landmarks.append((int(landmark.x * width), int(landmark.y * height),
-                              (landmark.z * width)))
-    return output_image,landmarks
-  
-def calculateangle(landmark1, landmark2, landmark3):
-    x1, y1, _ = landmark1
-    x2, y2, _ = landmark2
-    x3, y3, _ = landmark3
-    angle = math.degrees(math.atan2(y3 - y2, x3 - x2) - math.atan2(y1 - y2, x1 - x2))
-    if angle < 0:
-        angle +=360
-    return angle
+import numpy as np
+from tensorflow.keras.models import load_model
 
-def alert(frame,flag=True):
-    if not flag:
-        return [False,[]]
+# Load the model
+model = load_model('models\hand_gesture_cnn_model.h5')
+
+# Gesture mapping
+gesture_map = {
+    0: "Palm",
+    1: "L Sign",
+    2: "Fist",
+    3: "Fist Moved",
+    4: "Thumbs Up",
+    5: "Index Finger",  # Issue
+    6: "OK Sign",       # Safe
+    7: "Palm Moved",
+    8: "C Shape",
+    9: "Thumbs Down"
+}
+
+def preprocess_frame(frame):
+    """
+    Preprocess the input frame for prediction.
+    Args:
+        frame (np.array): Input frame in BGR format.
+    Returns:
+        np.array: Preprocessed frame.
+    """
     try:
-        frame, landmarks = detectpose(frame)
-        left_elbow_angle = calculateangle(landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value],
-                                        landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value],
-                                        landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value])
-      
-        left_shoulder_angle = calculateangle(landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value],
-                                            landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value],
-                                            landmarks[mp_pose.PoseLandmark.LEFT_HIP.value])
-      
-        right_elbow_angle = calculateangle(landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value],
-                                        landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value],
-                                        landmarks[mp_pose.PoseLandmark.RIGHT_WRIST.value])
-      
-        right_shoulder_angle = calculateangle(landmarks[mp_pose.PoseLandmark.RIGHT_HIP.value],
-                                            landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value],
-                                            landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value])
-      
-        if left_elbow_angle > 150 and left_elbow_angle < 210 and right_elbow_angle > 150 and right_elbow_angle < 210:
-            if left_shoulder_angle > 60 and left_shoulder_angle < 150 and right_shoulder_angle > 150 and right_shoulder_angle < 220:
-                return [True,[]]
-          
-        return [False,[]]
-    except:
-       return [False,[]]
+        # Convert frame to grayscale
+        gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        resized_frame = cv2.resize(gray_frame, (64, 64))  # Match model input size
+        normalized_frame = resized_frame / 255.0  # Normalize pixel values to [0, 1]
+        reshaped_frame = np.reshape(normalized_frame, (1, 64, 64, 1))  # Add batch and channel dimensions
+        # Debugging: Save the preprocessed frame for verification
+        cv2.imwrite("preprocessed_frame.jpg", (normalized_frame * 255).astype(np.uint8))
+        return reshaped_frame
+    except Exception as e:
+        print(f"Error in preprocess_frame: {e}")
+        return None
 
+def alert(frame, flag=True):
+    """
+    Perform hand gesture detection and return an alert status.
+    Args:
+        frame (np.array): Input frame.
+        flag (bool): If False, skip detection.
+    Returns:
+        tuple: Processed frame, Boolean indicating alert, and detected gesture.
+    """
+    if not flag:
+        return frame, "safe", {}
 
+    try:
+        # Preprocess the frame
+        preprocessed_data = preprocess_frame(frame)
+        if preprocessed_data is None:
+            return frame, "safe", {}
 
+        # Predict gesture
+        prediction = model.predict(preprocessed_data)
+        gesture_label = np.argmax(prediction)  # Get class with highest probability
+        gesture_name = gesture_map[gesture_label]  # Map to gesture name
 
-    
-    
-# """camera_video = cv2.VideoCapture(0)
-# while camera_video.isOpened():
-#   ok, frame = camera_video.read()
-#   if not ok:
-#     continue
+        # Trigger alert based on gesture
+        if gesture_name == "Index Finger":
+            return frame, "unsafe", {"gesture": gesture_name}
+        elif gesture_name == "OK Sign":
+            return frame, "safe", {"gesture": gesture_name}
+        else:
+            return frame, "safe", {"gesture": "Unknown"}
 
-#   frame = cv2.flip(frame, 1)
-#   frame_height, frame_width, _ = frame.shape
-#   frame = cv2.resize(frame,(int(frame_width * (640 / frame_height)), 640))
-#   result=alert(frame=frame)
-#   print(result)
-#   cv2.imshow('Pose Classification', frame)
-
-#   k = cv2.waitKey(1) & 0xFF
-#   if(k == 27):
-#     break
-
-# camera_video.release()
-#cv2.destroyAllWindows()"""
+    except Exception as e:
+        print(f"Error in detect_hand_gesture: {e}")
+        return frame, "safe", {}
