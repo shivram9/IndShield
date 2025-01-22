@@ -102,7 +102,7 @@ def allowed_file(filename):
 def play_alert_sound():
     try:
         for _ in range(3):
-            playsound('alert.mp3')
+            playsound('static\sounds\alert.mp3')
         logging.info("Alert sound played successfully.")
     except Exception as e:
         logging.error(f"Error playing alert sound: {str(e)}")
@@ -500,6 +500,8 @@ def process_frames(camid, region, flag_r_zone=False, flag_hand_alert=False, flag
                     x1, y1, x2, y2 = box
                     cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), 2)
                     cv2.putText(frame, "Fire Detected", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+
+                
 
             # Perform safety gear detection
             if flag_gear:
