@@ -34,7 +34,7 @@ client = Client(account_sid, auth_token)
 from models.r_zone import people_detection
 from models.fire_detection import fire_detection
 from models.gear_detection import gear_detection
-from models.alert import alert
+from models.Pose_Detect import alert
 from models.motion_amp import amp
 
 app = Flask(__name__)

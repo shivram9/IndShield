@@ -27780,3 +27780,108 @@
 2025-02-22 17:58:24,901 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
 2025-02-22 17:58:25,008 - WARNING -  * Debugger is active!
 2025-02-22 17:58:25,011 - INFO -  * Debugger PIN: 619-407-695
+2025-02-22 18:12:48,088 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-02-22 18:12:48,091 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-02-22 18:12:48,093 - DEBUG - interactive is False
+2025-02-22 18:12:48,093 - DEBUG - platform is win32
+2025-02-22 18:12:48,131 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-02-22 18:12:48,133 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-02-22 18:13:42,596 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-02-22 18:13:42,600 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-02-22 18:13:42,601 - DEBUG - interactive is False
+2025-02-22 18:13:42,601 - DEBUG - platform is win32
+2025-02-22 18:13:42,640 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-02-22 18:13:42,643 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-02-22 18:13:45,110 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-02-22 18:13:45,281 - DEBUG - Creating converter from 7 to 5
+2025-02-22 18:13:45,281 - DEBUG - Creating converter from 5 to 7
+2025-02-22 18:13:45,281 - DEBUG - Creating converter from 7 to 5
+2025-02-22 18:13:45,281 - DEBUG - Creating converter from 5 to 7
+2025-02-22 18:13:45,730 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-02-22 18:13:46,262 - DEBUG - Creating converter from 3 to 5
+2025-02-22 18:13:46,360 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-22 18:14:43,328 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-02-22 18:14:43,332 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-02-22 18:14:43,332 - DEBUG - interactive is False
+2025-02-22 18:14:43,333 - DEBUG - platform is win32
+2025-02-22 18:14:43,371 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-02-22 18:14:43,374 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-02-22 18:14:45,775 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-02-22 18:14:45,933 - DEBUG - Creating converter from 7 to 5
+2025-02-22 18:14:45,934 - DEBUG - Creating converter from 5 to 7
+2025-02-22 18:14:45,934 - DEBUG - Creating converter from 7 to 5
+2025-02-22 18:14:45,934 - DEBUG - Creating converter from 5 to 7
+2025-02-22 18:14:46,360 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-02-22 18:14:46,865 - DEBUG - Creating converter from 3 to 5
+2025-02-22 18:14:46,960 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-22 18:14:47,071 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 18:14:47,071 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 18:14:47,073 - INFO -  * Restarting with stat
+2025-02-22 18:14:48,755 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-02-22 18:14:48,759 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-02-22 18:14:48,761 - DEBUG - interactive is False
+2025-02-22 18:14:48,761 - DEBUG - platform is win32
+2025-02-22 18:14:48,798 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-02-22 18:14:48,801 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-02-22 18:14:51,248 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-02-22 18:14:51,458 - DEBUG - Creating converter from 7 to 5
+2025-02-22 18:14:51,459 - DEBUG - Creating converter from 5 to 7
+2025-02-22 18:14:51,459 - DEBUG - Creating converter from 7 to 5
+2025-02-22 18:14:51,459 - DEBUG - Creating converter from 5 to 7
+2025-02-22 18:14:51,906 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-02-22 18:14:52,468 - DEBUG - Creating converter from 3 to 5
+2025-02-22 18:14:52,569 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-22 18:14:52,679 - WARNING -  * Debugger is active!
+2025-02-22 18:14:52,681 - INFO -  * Debugger PIN: 619-407-695
+2025-02-22 18:14:52,993 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:52] "GET / HTTP/1.1" 200 -
+2025-02-22 18:14:53,120 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:53] "GET /static/css/style1.css HTTP/1.1" 200 -
+2025-02-22 18:14:53,121 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-22 18:14:53,127 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:53] "GET /static/css/style2.css HTTP/1.1" 200 -
+2025-02-22 18:14:53,133 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:53] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-02-22 18:14:53,133 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:53] "GET /static/img/index_bg.png HTTP/1.1" 200 -
+2025-02-22 18:14:53,158 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:53] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-02-22 18:14:53,785 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:53] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2025-02-22 18:14:59,648 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:59] "GET /login_page HTTP/1.1" 200 -
+2025-02-22 18:14:59,672 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:59] "GET /static/css/manage_cam.css HTTP/1.1" 200 -
+2025-02-22 18:14:59,672 - INFO - 127.0.0.1 - - [22/Feb/2025 18:14:59] "GET /static/img/login.jpg HTTP/1.1" 200 -
+2025-02-22 18:15:00,009 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-22 18:15:05,308 - INFO - User Srs logged in successfully.
+2025-02-22 18:15:05,309 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-22 18:15:05,317 - INFO - Dashboard accessed by user Srs.
+2025-02-22 18:15:05,322 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:05] "GET /dashboard HTTP/1.1" 200 -
+2025-02-22 18:15:05,352 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:05] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:05,352 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:05] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-22 18:15:11,478 - INFO - Notifications accessed by user Srs.
+2025-02-22 18:15:11,483 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:11] "GET /notifications HTTP/1.1" 200 -
+2025-02-22 18:15:11,505 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:11] "GET /static/css/notifications_complain.css HTTP/1.1" 200 -
+2025-02-22 18:15:11,509 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:11] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:11,511 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:11] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-22 18:15:12,318 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:12] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-22 18:15:12,337 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:12] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:12,342 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:12] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:12,342 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:12] "GET /static/img/manage_Cam_bg.png HTTP/1.1" 200 -
+2025-02-22 18:15:12,345 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:12] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-22 18:15:13,378 - INFO - Dashboard accessed by user Srs.
+2025-02-22 18:15:13,379 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:13] "GET /dashboard HTTP/1.1" 200 -
+2025-02-22 18:15:13,398 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:13] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:13,400 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:13] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-22 18:15:14,579 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:14] "[35m[1mGET /complaints HTTP/1.1[0m" 500 -
+2025-02-22 18:15:14,599 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:14] "GET /complaints?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-22 18:15:14,604 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:14] "GET /complaints?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-22 18:15:14,617 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:14] "GET /complaints?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-22 18:15:14,653 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:14] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-22 18:15:17,727 - INFO - Notifications accessed by user Srs.
+2025-02-22 18:15:17,729 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:17] "GET /notifications HTTP/1.1" 200 -
+2025-02-22 18:15:17,750 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:17] "[36mGET /static/css/notifications_complain.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:17,753 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:17] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:17,755 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:17] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-22 18:15:18,600 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:18] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-22 18:15:18,619 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:18] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:18,622 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:18] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:18,624 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:18] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-02-22 18:15:18,626 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:18] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-22 18:15:22,538 - INFO - Dashboard accessed by user Srs.
+2025-02-22 18:15:22,539 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:22] "GET /dashboard HTTP/1.1" 200 -
+2025-02-22 18:15:22,563 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:22] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-22 18:15:22,565 - INFO - 127.0.0.1 - - [22/Feb/2025 18:15:22] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
