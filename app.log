@@ -27195,3 +27195,554 @@
 2025-01-22 10:34:08,695 - INFO - 127.0.0.1 - - [22/Jan/2025 10:34:08] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
 2025-01-22 10:34:14,254 - INFO - 127.0.0.1 - - [22/Jan/2025 10:34:14] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
 2025-01-22 10:34:19,867 - INFO - 127.0.0.1 - - [22/Jan/2025 10:34:19] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
+2025-01-22 12:57:29,417 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-22 12:57:29,425 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 12:57:29,426 - DEBUG - interactive is False
+2025-01-22 12:57:29,427 - DEBUG - platform is win32
+2025-01-22 12:57:29,470 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 12:57:29,473 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-22 12:57:32,223 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-22 12:57:32,400 - DEBUG - Creating converter from 7 to 5
+2025-01-22 12:57:32,400 - DEBUG - Creating converter from 5 to 7
+2025-01-22 12:57:32,401 - DEBUG - Creating converter from 7 to 5
+2025-01-22 12:57:32,401 - DEBUG - Creating converter from 5 to 7
+2025-01-22 12:57:33,062 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-22 12:57:33,722 - DEBUG - Creating converter from 3 to 5
+2025-01-22 12:57:33,841 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-22 12:57:33,966 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 12:57:33,967 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-22 12:57:33,968 - INFO -  * Restarting with stat
+2025-01-22 12:57:35,937 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-22 12:57:35,941 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 12:57:35,943 - DEBUG - interactive is False
+2025-01-22 12:57:35,943 - DEBUG - platform is win32
+2025-01-22 12:57:35,984 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 12:57:35,987 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-22 12:57:38,701 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-22 12:57:38,884 - DEBUG - Creating converter from 7 to 5
+2025-01-22 12:57:38,885 - DEBUG - Creating converter from 5 to 7
+2025-01-22 12:57:38,885 - DEBUG - Creating converter from 7 to 5
+2025-01-22 12:57:38,885 - DEBUG - Creating converter from 5 to 7
+2025-01-22 12:57:39,353 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-22 12:57:39,894 - DEBUG - Creating converter from 3 to 5
+2025-01-22 12:57:39,998 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-22 12:57:40,109 - WARNING -  * Debugger is active!
+2025-01-22 12:57:40,111 - INFO -  * Debugger PIN: 619-407-695
+2025-01-22 12:57:57,718 - INFO - 127.0.0.1 - - [22/Jan/2025 12:57:57] "GET / HTTP/1.1" 200 -
+2025-01-22 12:57:58,055 - INFO - 127.0.0.1 - - [22/Jan/2025 12:57:58] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-01-22 12:57:58,056 - INFO - 127.0.0.1 - - [22/Jan/2025 12:57:58] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-01-22 12:57:58,065 - INFO - 127.0.0.1 - - [22/Jan/2025 12:57:58] "[36mGET /static/img/index_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 12:57:58,073 - INFO - 127.0.0.1 - - [22/Jan/2025 12:57:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-22 12:57:58,079 - INFO - 127.0.0.1 - - [22/Jan/2025 12:57:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-22 12:57:58,087 - INFO - 127.0.0.1 - - [22/Jan/2025 12:57:58] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-01-22 12:58:03,197 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:03] "GET /login_page HTTP/1.1" 200 -
+2025-01-22 12:58:03,253 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:03] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 12:58:03,257 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:03] "[36mGET /static/img/login.jpg HTTP/1.1[0m" 304 -
+2025-01-22 12:58:03,346 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-22 12:58:11,415 - INFO - User Srs logged in successfully.
+2025-01-22 12:58:11,416 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-22 12:58:11,429 - INFO - Dashboard accessed by user Srs.
+2025-01-22 12:58:11,434 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:11] "GET /dashboard HTTP/1.1" 200 -
+2025-01-22 12:58:11,481 - INFO - Video feed accessed for camera ID 10.226.148.33:8080 by user Srs.
+2025-01-22 12:58:11,493 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:11] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 12:58:11,498 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:11] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 12:58:14,614 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:14] "[35m[1mGET /complaints HTTP/1.1[0m" 500 -
+2025-01-22 12:58:14,664 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:14] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-22 12:58:14,670 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:14] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-22 12:58:14,708 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:14] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-22 12:58:16,156 - INFO - Video feed accessed for camera ID 10.226.148.33:8080 by user Srs.
+2025-01-22 12:58:17,199 - INFO - Notifications accessed by user Srs.
+2025-01-22 12:58:17,205 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:17] "GET /notifications HTTP/1.1" 200 -
+2025-01-22 12:58:17,256 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:17] "[36mGET /static/css/notifications_complain.css HTTP/1.1[0m" 304 -
+2025-01-22 12:58:17,258 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:17] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 12:58:17,261 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:17] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 12:58:18,230 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:18] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 12:58:18,273 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:18] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 12:58:18,280 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:18] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 12:58:18,282 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:18] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 12:58:18,288 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:18] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 12:58:25,339 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:25] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
+2025-01-22 12:58:30,849 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:30] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
+2025-01-22 12:58:31,736 - INFO - Dashboard accessed by user Srs.
+2025-01-22 12:58:31,739 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:31] "GET /dashboard HTTP/1.1" 200 -
+2025-01-22 12:58:31,783 - INFO - Video feed accessed for camera ID 10.226.148.33:8080 by user Srs.
+2025-01-22 12:58:31,785 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:31] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 12:58:31,789 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:31] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 12:58:45,691 - INFO - 127.0.0.1 - - [22/Jan/2025 12:58:45] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
+2025-01-22 12:59:09,179 - INFO - Notifications accessed by user Srs.
+2025-01-22 12:59:09,182 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:09] "GET /notifications HTTP/1.1" 200 -
+2025-01-22 12:59:09,226 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:09] "[36mGET /static/css/notifications_complain.css HTTP/1.1[0m" 304 -
+2025-01-22 12:59:09,232 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:09] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 12:59:09,241 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:09] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 12:59:10,149 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:10] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 12:59:10,177 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:10] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 12:59:10,181 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:10] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 12:59:10,188 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:10] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 12:59:10,188 - INFO - 127.0.0.1 - - [22/Jan/2025 12:59:10] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 13:19:39,377 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-22 13:19:39,381 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 13:19:39,384 - DEBUG - interactive is False
+2025-01-22 13:19:39,384 - DEBUG - platform is win32
+2025-01-22 13:19:39,423 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 13:19:39,425 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-22 13:19:42,219 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-22 13:19:42,400 - DEBUG - Creating converter from 7 to 5
+2025-01-22 13:19:42,400 - DEBUG - Creating converter from 5 to 7
+2025-01-22 13:19:42,401 - DEBUG - Creating converter from 7 to 5
+2025-01-22 13:19:42,401 - DEBUG - Creating converter from 5 to 7
+2025-01-22 13:19:42,863 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-22 13:19:43,447 - DEBUG - Creating converter from 3 to 5
+2025-01-22 13:19:43,557 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-22 13:19:43,671 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 13:19:43,672 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-22 13:19:43,673 - INFO -  * Restarting with stat
+2025-01-22 13:19:45,427 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-22 13:19:45,431 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 13:19:45,433 - DEBUG - interactive is False
+2025-01-22 13:19:45,433 - DEBUG - platform is win32
+2025-01-22 13:19:45,472 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 13:19:45,475 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-22 13:19:48,210 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-22 13:19:48,372 - DEBUG - Creating converter from 7 to 5
+2025-01-22 13:19:48,373 - DEBUG - Creating converter from 5 to 7
+2025-01-22 13:19:48,373 - DEBUG - Creating converter from 7 to 5
+2025-01-22 13:19:48,373 - DEBUG - Creating converter from 5 to 7
+2025-01-22 13:19:48,806 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-22 13:19:49,336 - DEBUG - Creating converter from 3 to 5
+2025-01-22 13:19:49,440 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-22 13:19:49,541 - WARNING -  * Debugger is active!
+2025-01-22 13:19:49,544 - INFO -  * Debugger PIN: 619-407-695
+2025-01-22 15:17:38,749 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-22 15:17:38,753 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 15:17:38,755 - DEBUG - interactive is False
+2025-01-22 15:17:38,755 - DEBUG - platform is win32
+2025-01-22 15:17:38,792 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 15:17:38,794 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-22 15:17:41,214 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-22 15:17:41,393 - DEBUG - Creating converter from 7 to 5
+2025-01-22 15:17:41,394 - DEBUG - Creating converter from 5 to 7
+2025-01-22 15:17:41,394 - DEBUG - Creating converter from 7 to 5
+2025-01-22 15:17:41,394 - DEBUG - Creating converter from 5 to 7
+2025-01-22 15:17:41,829 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-22 15:17:42,374 - DEBUG - Creating converter from 3 to 5
+2025-01-22 15:17:42,470 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-22 15:17:42,582 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-22 15:17:42,582 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-22 15:17:42,583 - INFO -  * Restarting with stat
+2025-01-22 15:17:44,324 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-22 15:17:44,327 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 15:17:44,328 - DEBUG - interactive is False
+2025-01-22 15:17:44,328 - DEBUG - platform is win32
+2025-01-22 15:17:44,366 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 15:17:44,368 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-22 15:17:46,923 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-22 15:17:47,090 - DEBUG - Creating converter from 7 to 5
+2025-01-22 15:17:47,090 - DEBUG - Creating converter from 5 to 7
+2025-01-22 15:17:47,090 - DEBUG - Creating converter from 7 to 5
+2025-01-22 15:17:47,090 - DEBUG - Creating converter from 5 to 7
+2025-01-22 15:17:47,531 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-22 15:17:48,066 - DEBUG - Creating converter from 3 to 5
+2025-01-22 15:17:48,169 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-22 15:17:48,270 - WARNING -  * Debugger is active!
+2025-01-22 15:17:48,273 - INFO -  * Debugger PIN: 619-407-695
+2025-01-22 15:17:48,578 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:48] "GET / HTTP/1.1" 200 -
+2025-01-22 15:17:48,708 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:48] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-01-22 15:17:48,716 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:48] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-01-22 15:17:48,717 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-22 15:17:48,723 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:48] "[36mGET /static/img/index_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 15:17:48,729 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-22 15:17:48,729 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:48] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-01-22 15:17:50,138 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:50] "GET /login_page HTTP/1.1" 200 -
+2025-01-22 15:17:50,170 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:50] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 15:17:50,172 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:50] "[36mGET /static/img/login.jpg HTTP/1.1[0m" 304 -
+2025-01-22 15:17:50,236 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-22 15:17:54,878 - INFO - User Srs logged in successfully.
+2025-01-22 15:17:54,879 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-22 15:17:54,886 - INFO - Dashboard accessed by user Srs.
+2025-01-22 15:17:54,890 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:54] "GET /dashboard HTTP/1.1" 200 -
+2025-01-22 15:17:54,919 - INFO - Video feed accessed for camera ID 10.226.148.33:8080 by user Srs.
+2025-01-22 15:17:54,926 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:54] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:17:54,937 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:54] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:17:58,358 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:58] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 15:17:58,384 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:58] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:17:58,388 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:58] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 15:17:58,391 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:58] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 15:17:58,394 - INFO - 127.0.0.1 - - [22/Jan/2025 15:17:58] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:17:59,995 - INFO - Notifications accessed by user Srs.
+2025-01-22 15:18:00,000 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:00] "GET /notifications HTTP/1.1" 200 -
+2025-01-22 15:18:00,031 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:00] "[36mGET /static/css/notifications_complain.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:00,037 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:00] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:00,038 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:00] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:18:02,732 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:02] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 15:18:02,763 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:02] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:02,766 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:02] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:02,770 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:02] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 15:18:02,772 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:02] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:18:05,047 - INFO - Dashboard accessed by user Srs.
+2025-01-22 15:18:05,048 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:05] "GET /dashboard HTTP/1.1" 200 -
+2025-01-22 15:18:05,073 - INFO - Video feed accessed for camera ID 10.226.148.33:8080 by user Srs.
+2025-01-22 15:18:05,078 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:05] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:05,081 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:05] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:18:06,532 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:06] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 15:18:06,554 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:06] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:06,557 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:06] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:06,565 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:06] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 15:18:06,566 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:06] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:18:07,369 - INFO - Notifications accessed by user Srs.
+2025-01-22 15:18:07,371 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:07] "GET /notifications HTTP/1.1" 200 -
+2025-01-22 15:18:07,398 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:07] "[36mGET /static/css/notifications_complain.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:07,404 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:07] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:07,405 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:07] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:18:08,776 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:08] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 15:18:08,803 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:08] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:08,812 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:08] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:08,815 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:08] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 15:18:08,818 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:08] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:18:25,664 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:25] "[35m[1mGET /complaints HTTP/1.1[0m" 500 -
+2025-01-22 15:18:25,692 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:25] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:25,697 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:25] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-22 15:18:25,724 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:25] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-22 15:18:43,267 - INFO - Dashboard accessed by user Srs.
+2025-01-22 15:18:43,267 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:43] "GET /dashboard HTTP/1.1" 200 -
+2025-01-22 15:18:43,295 - INFO - Video feed accessed for camera ID 10.226.148.33:8080 by user Srs.
+2025-01-22 15:18:43,300 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:43] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:18:43,304 - INFO - 127.0.0.1 - - [22/Jan/2025 15:18:43] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:19:24,822 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:24] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
+2025-01-22 15:19:34,897 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:34] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
+2025-01-22 15:19:50,342 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:50] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 15:19:50,379 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:50] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 15:19:50,379 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:50] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:19:50,380 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:50] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 15:19:50,381 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:50] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:19:59,541 - INFO - Camera with ID 5 deleted by user Srs.
+2025-01-22 15:19:59,541 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:59] "[32mGET /delete_camera/5 HTTP/1.1[0m" 302 -
+2025-01-22 15:19:59,546 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:59] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 15:19:59,567 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:59] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:19:59,569 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:59] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 15:19:59,573 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:59] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 15:19:59,576 - INFO - 127.0.0.1 - - [22/Jan/2025 15:19:59] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:20:13,077 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:13] "GET /video_feed/10.226.148.33:8080 HTTP/1.1" 200 -
+2025-01-22 15:20:17,567 - INFO - Camera details updated for user ID 10.
+2025-01-22 15:20:17,568 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:17] "[32mPOST /get_cam_details HTTP/1.1[0m" 302 -
+2025-01-22 15:20:17,573 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:17] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-22 15:20:17,594 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:17] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:20:17,597 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:17] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-22 15:20:17,602 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:17] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-22 15:20:17,603 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:17] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:20:20,686 - INFO - Dashboard accessed by user Srs.
+2025-01-22 15:20:20,687 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:20] "GET /dashboard HTTP/1.1" 200 -
+2025-01-22 15:20:20,715 - INFO - Video feed accessed for camera ID 10.241.168.253:8080 by user Srs.
+2025-01-22 15:20:20,720 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:20] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-22 15:20:20,723 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:20] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-22 15:20:25,620 - INFO - 127.0.0.1 - - [22/Jan/2025 15:20:25] "GET /video_feed/10.241.168.253:8080 HTTP/1.1" 200 -
+2025-01-22 15:22:08,962 - INFO -  * Detected change in 'S:\\CODE\\GitHub OpenSource\\IndShield\\app.py', reloading
+2025-01-22 15:22:10,116 - INFO -  * Restarting with stat
+2025-01-22 15:22:11,866 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-22 15:22:11,870 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 15:22:11,871 - DEBUG - interactive is False
+2025-01-22 15:22:11,872 - DEBUG - platform is win32
+2025-01-22 15:22:11,910 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-22 15:22:11,912 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-22 15:22:14,414 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-22 15:22:14,592 - DEBUG - Creating converter from 7 to 5
+2025-01-22 15:22:14,593 - DEBUG - Creating converter from 5 to 7
+2025-01-22 15:22:14,593 - DEBUG - Creating converter from 7 to 5
+2025-01-22 15:22:14,593 - DEBUG - Creating converter from 5 to 7
+2025-01-22 15:22:15,058 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-22 15:22:15,594 - DEBUG - Creating converter from 3 to 5
+2025-01-22 15:22:15,695 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-22 15:22:15,795 - WARNING -  * Debugger is active!
+2025-01-22 15:22:15,798 - INFO -  * Debugger PIN: 619-407-695
+2025-01-23 12:15:04,825 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-23 12:15:04,831 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-23 12:15:04,833 - DEBUG - interactive is False
+2025-01-23 12:15:04,833 - DEBUG - platform is win32
+2025-01-23 12:15:04,887 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-23 12:15:04,891 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-23 12:15:10,373 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-23 12:15:10,915 - DEBUG - Creating converter from 7 to 5
+2025-01-23 12:15:10,916 - DEBUG - Creating converter from 5 to 7
+2025-01-23 12:15:10,916 - DEBUG - Creating converter from 7 to 5
+2025-01-23 12:15:10,916 - DEBUG - Creating converter from 5 to 7
+2025-01-23 12:15:12,120 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-23 12:15:13,392 - DEBUG - Creating converter from 3 to 5
+2025-01-23 12:15:13,558 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-23 12:15:13,805 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-23 12:15:13,806 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-23 12:15:13,807 - INFO -  * Restarting with stat
+2025-01-23 12:15:15,567 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-23 12:15:15,571 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-23 12:15:15,572 - DEBUG - interactive is False
+2025-01-23 12:15:15,573 - DEBUG - platform is win32
+2025-01-23 12:15:15,611 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-23 12:15:15,613 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-23 12:15:17,871 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-23 12:15:18,053 - DEBUG - Creating converter from 7 to 5
+2025-01-23 12:15:18,054 - DEBUG - Creating converter from 5 to 7
+2025-01-23 12:15:18,054 - DEBUG - Creating converter from 7 to 5
+2025-01-23 12:15:18,054 - DEBUG - Creating converter from 5 to 7
+2025-01-23 12:15:18,530 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-23 12:15:19,173 - DEBUG - Creating converter from 3 to 5
+2025-01-23 12:15:19,301 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-23 12:15:19,424 - WARNING -  * Debugger is active!
+2025-01-23 12:15:19,427 - INFO -  * Debugger PIN: 619-407-695
+2025-01-23 12:15:41,116 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-23 12:15:41,120 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-23 12:15:41,122 - DEBUG - interactive is False
+2025-01-23 12:15:41,122 - DEBUG - platform is win32
+2025-01-23 12:15:41,165 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-23 12:15:41,168 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-23 12:15:43,868 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-23 12:15:44,065 - DEBUG - Creating converter from 7 to 5
+2025-01-23 12:15:44,065 - DEBUG - Creating converter from 5 to 7
+2025-01-23 12:15:44,065 - DEBUG - Creating converter from 7 to 5
+2025-01-23 12:15:44,066 - DEBUG - Creating converter from 5 to 7
+2025-01-23 12:15:44,578 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-23 12:15:45,170 - DEBUG - Creating converter from 3 to 5
+2025-01-23 12:15:45,281 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-23 12:15:45,394 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-23 12:15:45,394 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-23 12:15:45,396 - INFO -  * Restarting with stat
+2025-01-23 12:15:47,281 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-01-23 12:15:47,284 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-01-23 12:15:47,286 - DEBUG - interactive is False
+2025-01-23 12:15:47,286 - DEBUG - platform is win32
+2025-01-23 12:15:47,327 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-01-23 12:15:47,330 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-01-23 12:15:50,561 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-23 12:15:50,752 - DEBUG - Creating converter from 7 to 5
+2025-01-23 12:15:50,752 - DEBUG - Creating converter from 5 to 7
+2025-01-23 12:15:50,753 - DEBUG - Creating converter from 7 to 5
+2025-01-23 12:15:50,753 - DEBUG - Creating converter from 5 to 7
+2025-01-23 12:15:51,227 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-01-23 12:15:51,814 - DEBUG - Creating converter from 3 to 5
+2025-01-23 12:15:51,924 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-01-23 12:15:52,042 - WARNING -  * Debugger is active!
+2025-01-23 12:15:52,045 - INFO -  * Debugger PIN: 619-407-695
+2025-01-23 12:15:52,382 - INFO - 127.0.0.1 - - [23/Jan/2025 12:15:52] "GET / HTTP/1.1" 200 -
+2025-01-23 12:15:52,486 - INFO - 127.0.0.1 - - [23/Jan/2025 12:15:52] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-01-23 12:15:52,496 - INFO - 127.0.0.1 - - [23/Jan/2025 12:15:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-23 12:15:52,502 - INFO - 127.0.0.1 - - [23/Jan/2025 12:15:52] "[36mGET /static/img/index_bg.png HTTP/1.1[0m" 304 -
+2025-01-23 12:15:52,502 - INFO - 127.0.0.1 - - [23/Jan/2025 12:15:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-01-23 12:15:52,503 - INFO - 127.0.0.1 - - [23/Jan/2025 12:15:52] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-01-23 12:15:52,509 - INFO - 127.0.0.1 - - [23/Jan/2025 12:15:52] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-01-23 12:16:28,749 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:28] "GET /login_page HTTP/1.1" 200 -
+2025-01-23 12:16:28,819 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:28] "[36mGET /static/img/login.jpg HTTP/1.1[0m" 304 -
+2025-01-23 12:16:28,822 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:28] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-23 12:16:28,928 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-23 12:16:34,215 - INFO - User Srs logged in successfully.
+2025-01-23 12:16:34,217 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-23 12:16:34,234 - INFO - Dashboard accessed by user Srs.
+2025-01-23 12:16:34,239 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:34] "GET /dashboard HTTP/1.1" 200 -
+2025-01-23 12:16:34,282 - INFO - Video feed accessed for camera ID 10.241.168.253:8080 by user Srs.
+2025-01-23 12:16:34,304 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:34] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:16:34,308 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:34] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:16:37,249 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:37] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-23 12:16:37,294 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:37] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:16:37,301 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:37] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-23 12:16:37,305 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:37] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:16:37,310 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:37] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-23 12:16:39,849 - INFO - Camera with ID 5 deleted by user Srs.
+2025-01-23 12:16:39,851 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:39] "[32mGET /delete_camera/5 HTTP/1.1[0m" 302 -
+2025-01-23 12:16:39,860 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:39] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-23 12:16:39,898 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:39] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:16:39,902 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:39] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-23 12:16:39,912 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:39] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-23 12:16:39,913 - INFO - 127.0.0.1 - - [23/Jan/2025 12:16:39] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:17:55,959 - INFO - Camera details updated for user ID 10.
+2025-01-23 12:17:55,961 - INFO - 127.0.0.1 - - [23/Jan/2025 12:17:55] "[32mPOST /get_cam_details HTTP/1.1[0m" 302 -
+2025-01-23 12:17:55,969 - INFO - 127.0.0.1 - - [23/Jan/2025 12:17:55] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-23 12:17:56,014 - INFO - 127.0.0.1 - - [23/Jan/2025 12:17:56] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:17:56,027 - INFO - 127.0.0.1 - - [23/Jan/2025 12:17:56] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-23 12:17:56,046 - INFO - 127.0.0.1 - - [23/Jan/2025 12:17:56] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-23 12:17:56,049 - INFO - 127.0.0.1 - - [23/Jan/2025 12:17:56] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:18:02,382 - INFO - Dashboard accessed by user Srs.
+2025-01-23 12:18:02,383 - INFO - 127.0.0.1 - - [23/Jan/2025 12:18:02] "GET /dashboard HTTP/1.1" 200 -
+2025-01-23 12:18:02,420 - INFO - Video feed accessed for camera ID 10.125.208.64:8080 by user Srs.
+2025-01-23 12:18:02,438 - INFO - 127.0.0.1 - - [23/Jan/2025 12:18:02] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:18:02,439 - INFO - 127.0.0.1 - - [23/Jan/2025 12:18:02] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:18:04,255 - INFO - 127.0.0.1 - - [23/Jan/2025 12:18:04] "GET /video_feed/10.241.168.253:8080 HTTP/1.1" 200 -
+2025-01-23 12:18:07,963 - INFO - 127.0.0.1 - - [23/Jan/2025 12:18:07] "GET /video_feed/10.125.208.64:8080 HTTP/1.1" 200 -
+2025-01-23 12:19:27,927 - INFO - Dashboard accessed by user Srs.
+2025-01-23 12:19:27,928 - INFO - 127.0.0.1 - - [23/Jan/2025 12:19:27] "GET /dashboard HTTP/1.1" 200 -
+2025-01-23 12:19:27,972 - INFO - Video feed accessed for camera ID 10.125.208.64:8080 by user Srs.
+2025-01-23 12:19:27,973 - INFO - 127.0.0.1 - - [23/Jan/2025 12:19:27] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:19:27,975 - INFO - 127.0.0.1 - - [23/Jan/2025 12:19:27] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:19:28,199 - INFO - 127.0.0.1 - - [23/Jan/2025 12:19:28] "GET /video_feed/10.125.208.64:8080 HTTP/1.1" 200 -
+2025-01-23 12:19:48,218 - INFO - Dashboard accessed by user Srs.
+2025-01-23 12:19:48,220 - INFO - 127.0.0.1 - - [23/Jan/2025 12:19:48] "GET /dashboard HTTP/1.1" 200 -
+2025-01-23 12:19:48,260 - INFO - Video feed accessed for camera ID 10.125.208.64:8080 by user Srs.
+2025-01-23 12:19:48,266 - INFO - 127.0.0.1 - - [23/Jan/2025 12:19:48] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:19:48,267 - INFO - 127.0.0.1 - - [23/Jan/2025 12:19:48] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:19:48,514 - INFO - 127.0.0.1 - - [23/Jan/2025 12:19:48] "GET /video_feed/10.125.208.64:8080 HTTP/1.1" 200 -
+2025-01-23 12:19:56,091 - WARNING - No frames received from camera ID 10.125.208.64:8080.
+2025-01-23 12:20:07,939 - INFO - Dashboard accessed by user Srs.
+2025-01-23 12:20:07,940 - INFO - 127.0.0.1 - - [23/Jan/2025 12:20:07] "GET /dashboard HTTP/1.1" 200 -
+2025-01-23 12:20:07,962 - INFO - 127.0.0.1 - - [23/Jan/2025 12:20:07] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:20:07,972 - INFO - 127.0.0.1 - - [23/Jan/2025 12:20:07] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:20:07,983 - INFO - Video feed accessed for camera ID 10.125.208.64:8080 by user Srs.
+2025-01-23 12:20:08,309 - INFO - 127.0.0.1 - - [23/Jan/2025 12:20:08] "GET /video_feed/10.125.208.64:8080 HTTP/1.1" 200 -
+2025-01-23 12:21:16,829 - INFO - 127.0.0.1 - - [23/Jan/2025 12:21:16] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-23 12:21:16,872 - INFO - 127.0.0.1 - - [23/Jan/2025 12:21:16] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:21:16,872 - INFO - 127.0.0.1 - - [23/Jan/2025 12:21:16] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-23 12:21:16,876 - INFO - 127.0.0.1 - - [23/Jan/2025 12:21:16] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-23 12:21:16,883 - INFO - 127.0.0.1 - - [23/Jan/2025 12:21:16] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:22:27,060 - INFO - Notifications accessed by user Srs.
+2025-01-23 12:22:27,068 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:27] "GET /notifications HTTP/1.1" 200 -
+2025-01-23 12:22:27,140 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:27] "[36mGET /static/css/notifications_complain.css HTTP/1.1[0m" 304 -
+2025-01-23 12:22:27,143 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:27] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:22:27,146 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:27] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:22:27,976 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:27] "[35m[1mGET /complaints HTTP/1.1[0m" 500 -
+2025-01-23 12:22:28,020 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:28] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-23 12:22:28,021 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:28] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-23 12:22:28,062 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:28] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-23 12:22:32,664 - INFO - Notifications accessed by user Srs.
+2025-01-23 12:22:32,667 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:32] "GET /notifications HTTP/1.1" 200 -
+2025-01-23 12:22:32,695 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:32] "[36mGET /static/css/notifications_complain.css HTTP/1.1[0m" 304 -
+2025-01-23 12:22:32,703 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:32] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:22:32,706 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:32] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-01-23 12:22:34,754 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:34] "GET /manage_camera HTTP/1.1" 200 -
+2025-01-23 12:22:34,794 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:34] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-01-23 12:22:34,797 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:34] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-01-23 12:22:34,805 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:34] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-01-23 12:22:34,808 - INFO - 127.0.0.1 - - [23/Jan/2025 12:22:34] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 21:56:13,391 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-02-02 21:56:13,397 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-02-02 21:56:13,399 - DEBUG - interactive is False
+2025-02-02 21:56:13,399 - DEBUG - platform is win32
+2025-02-02 21:56:13,452 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-02-02 21:56:13,456 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-02-02 21:56:42,665 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-02-02 21:56:58,704 - DEBUG - Creating converter from 7 to 5
+2025-02-02 21:56:58,705 - DEBUG - Creating converter from 5 to 7
+2025-02-02 21:56:58,705 - DEBUG - Creating converter from 7 to 5
+2025-02-02 21:56:58,705 - DEBUG - Creating converter from 5 to 7
+2025-02-02 21:57:39,700 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-02-02 21:57:39,705 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-02-02 21:57:39,706 - DEBUG - interactive is False
+2025-02-02 21:57:39,706 - DEBUG - platform is win32
+2025-02-02 21:57:39,745 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-02-02 21:57:39,747 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-02-02 21:57:44,479 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-02-02 21:57:44,655 - DEBUG - Creating converter from 7 to 5
+2025-02-02 21:57:44,655 - DEBUG - Creating converter from 5 to 7
+2025-02-02 21:57:44,655 - DEBUG - Creating converter from 7 to 5
+2025-02-02 21:57:44,656 - DEBUG - Creating converter from 5 to 7
+2025-02-02 21:57:53,897 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-02-02 21:58:07,947 - DEBUG - Creating converter from 3 to 5
+2025-02-02 21:58:08,110 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-02 21:58:08,304 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-02 21:58:08,304 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-02 21:58:08,306 - INFO -  * Restarting with stat
+2025-02-02 21:58:10,101 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\env\lib\site-packages\matplotlib\mpl-data
+2025-02-02 21:58:10,105 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-02-02 21:58:10,107 - DEBUG - interactive is False
+2025-02-02 21:58:10,107 - DEBUG - platform is win32
+2025-02-02 21:58:10,150 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-02-02 21:58:10,153 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-02-02 21:58:15,138 - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-02-02 21:58:15,381 - DEBUG - Creating converter from 7 to 5
+2025-02-02 21:58:15,381 - DEBUG - Creating converter from 5 to 7
+2025-02-02 21:58:15,381 - DEBUG - Creating converter from 7 to 5
+2025-02-02 21:58:15,381 - DEBUG - Creating converter from 5 to 7
+2025-02-02 21:58:15,859 - DEBUG - etils.epath was not found. Using pathlib for file I/O.
+2025-02-02 21:58:16,509 - DEBUG - Creating converter from 3 to 5
+2025-02-02 21:58:16,646 - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-02-02 21:58:16,756 - WARNING -  * Debugger is active!
+2025-02-02 21:58:16,759 - INFO -  * Debugger PIN: 619-407-695
+2025-02-02 21:58:17,099 - INFO - 127.0.0.1 - - [02/Feb/2025 21:58:17] "GET / HTTP/1.1" 200 -
+2025-02-02 21:58:17,232 - INFO - 127.0.0.1 - - [02/Feb/2025 21:58:17] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-02 21:58:17,235 - INFO - 127.0.0.1 - - [02/Feb/2025 21:58:17] "GET /static/css/style2.css HTTP/1.1" 200 -
+2025-02-02 21:58:17,240 - INFO - 127.0.0.1 - - [02/Feb/2025 21:58:17] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-02-02 21:58:17,240 - INFO - 127.0.0.1 - - [02/Feb/2025 21:58:17] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-02-02 21:58:17,242 - INFO - 127.0.0.1 - - [02/Feb/2025 21:58:17] "GET /static/css/style1.css HTTP/1.1" 200 -
+2025-02-02 21:58:17,242 - INFO - 127.0.0.1 - - [02/Feb/2025 21:58:17] "GET /static/img/index_bg.png HTTP/1.1" 200 -
+2025-02-02 21:58:49,565 - INFO - 127.0.0.1 - - [02/Feb/2025 21:58:49] "GET /static/img/favicon.png HTTP/1.1" 200 -
+2025-02-02 21:59:26,324 - INFO - 127.0.0.1 - - [02/Feb/2025 21:59:26] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-02-02 21:59:34,559 - INFO - 127.0.0.1 - - [02/Feb/2025 21:59:34] "GET /login_page HTTP/1.1" 200 -
+2025-02-02 21:59:34,608 - INFO - 127.0.0.1 - - [02/Feb/2025 21:59:34] "GET /static/img/login.jpg HTTP/1.1" 200 -
+2025-02-02 21:59:34,609 - INFO - 127.0.0.1 - - [02/Feb/2025 21:59:34] "GET /static/css/manage_cam.css HTTP/1.1" 200 -
+2025-02-02 22:00:58,019 - INFO - 127.0.0.1 - - [02/Feb/2025 22:00:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-02 22:01:05,631 - INFO - User Srs logged in successfully.
+2025-02-02 22:01:05,633 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-02 22:01:05,647 - INFO - Dashboard accessed by user Srs.
+2025-02-02 22:01:05,655 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:05] "GET /dashboard HTTP/1.1" 200 -
+2025-02-02 22:01:05,693 - INFO - Video feed accessed for camera ID 10.125.208.64:8080 by user Srs.
+2025-02-02 22:01:05,718 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:05] "GET /static/css/style_dash.css HTTP/1.1" 200 -
+2025-02-02 22:01:05,720 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:05] "GET /static/js/script_dash.js HTTP/1.1" 200 -
+2025-02-02 22:01:17,050 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:17] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-02 22:01:17,077 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:17] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:01:17,082 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:17] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-02 22:01:17,087 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:17] "GET /static/img/manage_Cam_bg.png HTTP/1.1" 200 -
+2025-02-02 22:01:17,089 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:17] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:01:18,870 - INFO - Notifications accessed by user Srs.
+2025-02-02 22:01:18,877 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:18] "GET /notifications HTTP/1.1" 200 -
+2025-02-02 22:01:18,925 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:18] "GET /static/css/notifications_complain.css HTTP/1.1" 200 -
+2025-02-02 22:01:18,932 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:18] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:01:18,935 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:18] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:01:21,163 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:21] "[35m[1mGET /complaints HTTP/1.1[0m" 500 -
+2025-02-02 22:01:21,208 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:21] "GET /complaints?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-02 22:01:21,220 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:21] "GET /complaints?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-02 22:01:21,264 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:21] "GET /complaints?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-02 22:01:21,306 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:21] "[36mGET /complaints?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-02 22:01:25,265 - INFO - Dashboard accessed by user Srs.
+2025-02-02 22:01:25,267 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:25] "GET /dashboard HTTP/1.1" 200 -
+2025-02-02 22:01:25,301 - INFO - Video feed accessed for camera ID 10.125.208.64:8080 by user Srs.
+2025-02-02 22:01:25,306 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:25] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:01:25,313 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:25] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:01:27,019 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:27] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-02 22:01:27,061 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:27] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:01:27,074 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:27] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-02 22:01:27,080 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:27] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-02-02 22:01:27,085 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:27] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:01:28,908 - INFO - Camera with ID 5 deleted by user Srs.
+2025-02-02 22:01:28,909 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:28] "[32mGET /delete_camera/5 HTTP/1.1[0m" 302 -
+2025-02-02 22:01:28,918 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:28] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-02 22:01:28,953 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:28] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:01:28,957 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:28] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-02 22:01:28,965 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:28] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-02-02 22:01:28,968 - INFO - 127.0.0.1 - - [02/Feb/2025 22:01:28] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:02:08,325 - INFO - Camera details updated for user ID 10.
+2025-02-02 22:02:08,326 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:08] "[32mPOST /get_cam_details HTTP/1.1[0m" 302 -
+2025-02-02 22:02:08,334 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:08] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-02 22:02:08,377 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:08] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:02:08,378 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:08] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-02 22:02:08,379 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:08] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-02-02 22:02:08,380 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:08] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:02:10,587 - INFO - Dashboard accessed by user Srs.
+2025-02-02 22:02:10,589 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:10] "GET /dashboard HTTP/1.1" 200 -
+2025-02-02 22:02:10,631 - INFO - Video feed accessed for camera ID 192.168.43.159:8080 by user Srs.
+2025-02-02 22:02:10,636 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:10] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:02:10,648 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:10] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:02:13,462 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:13] "GET /video_feed/192.168.43.159:8080 HTTP/1.1" 200 -
+2025-02-02 22:02:40,440 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:40] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-02 22:02:40,475 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:40] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:02:40,483 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:40] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-02 22:02:40,487 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:40] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-02-02 22:02:40,490 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:40] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:02:44,493 - INFO - Dashboard accessed by user Srs.
+2025-02-02 22:02:44,496 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:44] "GET /dashboard HTTP/1.1" 200 -
+2025-02-02 22:02:44,535 - INFO - Video feed accessed for camera ID 192.168.43.159:8080 by user Srs.
+2025-02-02 22:02:44,539 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:44] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:02:44,540 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:44] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:02:44,837 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:44] "GET /video_feed/192.168.43.159:8080 HTTP/1.1" 200 -
+2025-02-02 22:02:46,280 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:46] "GET /video_feed/10.125.208.64:8080 HTTP/1.1" 200 -
+2025-02-02 22:02:55,061 - INFO - 127.0.0.1 - - [02/Feb/2025 22:02:55] "GET /video_feed/10.125.208.64:8080 HTTP/1.1" 200 -
+2025-02-02 22:03:06,798 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:06] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-02 22:03:06,837 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:06] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:03:06,846 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:06] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-02 22:03:06,853 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:06] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-02-02 22:03:06,856 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:06] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-02-02 22:03:22,344 - INFO - Camera with ID 5 deleted by user Srs.
+2025-02-02 22:03:22,345 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:22] "[32mGET /delete_camera/5 HTTP/1.1[0m" 302 -
+2025-02-02 22:03:22,354 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:22] "GET /manage_camera HTTP/1.1" 200 -
+2025-02-02 22:03:22,388 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:22] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-02-02 22:03:22,393 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:22] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-02-02 22:03:22,402 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:22] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-02-02 22:03:22,404 - INFO - 127.0.0.1 - - [02/Feb/2025 22:03:22] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
