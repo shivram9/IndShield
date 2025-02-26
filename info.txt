@@ -18,9 +18,9 @@ This code is a comprehensive Flask-based web application designed for real-time 
   - SMS notifications via Twilio
   - Alert history with frame snapshots
 
-- **Complaint Management**:
-  - User-submitted complaints with file attachments
-  - Complaint tracking system
+- **complaint Management**:
+  - User-submitted complaint with file attachments
+  - complaint tracking system
 
 - **Camera Management**:
   - Multiple camera configuration
@@ -45,7 +45,7 @@ This code is a comprehensive Flask-based web application designed for real-time 
     - User credentials
     - Camera configurations
     - Alert history
-    - Complaints
+    - complaints
 
 ### 3. Key Components Breakdown
 
@@ -140,7 +140,7 @@ This code is a comprehensive Flask-based web application designed for real-time 
    - Visual/audio alerts
    - Database logging
    - SMS notifications (for critical events)
-5. Users can review historical alerts and submit complaints
+5. Users can review historical alerts and submit complaint
 
 ### 6. Optimization Opportunities
 - **Security**:

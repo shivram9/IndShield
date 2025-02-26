@@ -1,2 +1,5 @@
-from app import db, Complaint
-Complaint.query.all()
+from app import db
+from app import complaint
+
+db.create_all()
+print("Tables created successfully!")

@@ -10,6 +10,9 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style_dash.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+
     <title>Manage Cameras</title>
     <link rel="stylesheet" href="/static/css/manage_cam.css">
 
@@ -19,9 +22,13 @@
     <div class="wrapper">
         {% include 'sidebar.html' %}
         <section>
+
+            <!-- Image Start-->
             <div class="imgBx">
-                <img src="/static/img/manage_Cam_bg.png">
+                <img src="static\img\manage_Cam_bg.png" alt="Camera Image" class="camera-image">
             </div>
+            <!-- Image End-->
+            
             <div class="contentBx">
                 <div class="formBx">
                     <h2>Camera Details</h2>
@@ -72,7 +79,8 @@
                                         <td>{{ "Yes" if camera.restricted_zone else "No" }}</td>
                                         <td>{{ "Yes" if camera.safety_gear_detection else "No" }}</td>
                                         <td>
-                                            <a href="/delete_camera/{{camera.id}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</button>
+                                            <a href="/delete_camera/{{camera.id}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</a>
+
                                         </td>
                                     </tr>
                                     {% endfor %}

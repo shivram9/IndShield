@@ -1,0 +1,2 @@
+@keyframes colorCycle { 0% { color: #47b2e4; text-shadow: 0 0 5px #47b2e4; } 25% { color: #73c5eb; text-shadow: 0 0 8px #73c5eb; } 50% { color: #ffffff; text-shadow: 0 0 12px #ffffff; } 75% { color: #73c5eb; text-shadow: 0 0 8px #73c5eb; } 100% { color: #47b2e4; text-shadow: 0 0 5px #47b2e4; } }
+.color-variant { animation: colorCycle 4s linear infinite; }

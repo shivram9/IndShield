@@ -1,0 +1,4 @@
+@keyframes spark { 0% { opacity: 0; transform: translateX(-100%); } 50% { opacity: 0.3; transform: translateX(0); } 100% { opacity: 0; transform: translateX(100%); } }
+.spark-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; background: transparent; }
+.spark-overlay::before { content: ""; position: absolute; top: 0; left: -50%; width: 50%; height: 100%; background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%); animation: spark 3s linear infinite; }
+

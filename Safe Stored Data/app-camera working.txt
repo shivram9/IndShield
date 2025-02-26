@@ -23,7 +23,7 @@ from models.motion_amp import amp
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'the random string'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
-app.config["SQLALCHEMY_BINDS"]={"complain":"sqlite:///complain.db",
+app.config["SQLALCHEMY_BINDS"]={"complaint":"sqlite:///complaint.db",
                                 "cams":"sqlite:///cams.db",
                                 "alerts":"sqlite:///alerts.db"}
 
@@ -60,7 +60,7 @@ class Alert(db.Model):
     alert_type = db.Column(db.String(50))
     frame_snapshot = db.Column(db.LargeBinary)
 
-class Complaint(db.Model):
+class complaint(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     full_name = db.Column(db.String(100))
@@ -191,14 +191,14 @@ def manage_cam_page():
     cameras = Camera.query.filter_by(user_id=current_user.id).all()
     return render_template('manage_cam.html', cameras=cameras)
 
-@app.route('/complaints')
+@app.route('/complaint')
 @login_required
-def complaints():
-    complaints = Complaint.query.filter_by(user_id=current_user.id).all()
-    for complaint in complaints:
-        if complaint.file_data:
-            complaint.file_data = base64.b64encode(complaint.file_data).decode('utf-8')
-    return render_template('complaints.html', complaints=complaints, user=current_user)
+def complaint():
+    complaint = complaint.query.filter_by(user_id=current_user.id).all()
+    for complaintt in complaint:
+        if complaintt.file_data:
+            complaintt.file_data = base64.b64encode(complaintt.file_data).decode('utf-8')
+    return render_template('complaint.html', complaint=complaint, user=current_user)
 
 @app.route('/notifications')
 @login_required

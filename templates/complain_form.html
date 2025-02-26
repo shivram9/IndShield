@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <title>Complain Form</title>
-  <link rel="stylesheet" href="/static/css/complain.css">
+  <link rel="stylesheet" href="/static/css/complaint.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -45,7 +45,7 @@
       <div class="col-md-6">
         <section id="formpart" class="formpart">
           <h2 class="text-center mb-4">Raise Your Complain</h2>
-          <form action="/{{id}}/submit_complaint" method="post" enctype="multipart/form-data">
+          <form action="/{{id}}/submit_complaintt" method="post" enctype="multipart/form-data">
             <div class="form-group">
               <label for="fullName">Full Name</label>
               <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name">
@@ -59,7 +59,7 @@
               <label for="alertType">Select the alert type</label>
               <select class="form-control" id="alertType" name="alertType">
                 <option value="Report an Alert">Report an Alert</option>
-                <option value="Normal Complaint">Normal Complaint</option>
+                <option value="Normal complaint">Normal complaint</option>
                 <option value="Harassment reporting">Alert reporting</option>
               </select>
             </div>

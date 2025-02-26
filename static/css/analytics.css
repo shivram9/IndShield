@@ -1,0 +1,17 @@
+.analytics-container {
+    background: #0d1117;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+canvas {
+    background: #161b22;
+    padding: 15px;
+    border-radius: 10px;
+}
