@@ -42,6 +42,8 @@ from models.pose_detection import PoseEmergencyDetector
 from models.motion_amp import amp
 
 
+
+
 # Flask app configuration
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY')
@@ -88,7 +90,6 @@ class Alert(db.Model):
     frame_snapshot = db.Column(db.LargeBinary)
 
 class complaint(db.Model):
-    __bind_key__ = 'complaint'  # Ensure it's connected to the right database
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     full_name = db.Column(db.String(100))
@@ -96,6 +97,7 @@ class complaint(db.Model):
     alert_type = db.Column(db.String(50))
     description = db.Column(db.Text)
     file_data = db.Column(db.LargeBinary)
+
 
 # Initialize detection models
 r_zone = people_detection("models/yolov8n.pt")
@@ -215,8 +217,8 @@ def upload_file():
         logging.warning("File upload attempted with wrong format.")
         return redirect("/upload")
 
-@app.route('/<int:id>/submit_complaintt', methods=['GET', 'POST'])
-def submit_complaintt(id):
+@app.route('/<int:id>/submit_complaint_submited', methods=['GET', 'POST'])
+def submit_complaint_submited(id):
     if request.method == 'POST':
         full_name = request.form['fullName']
         email = request.form['email']
@@ -225,16 +227,16 @@ def submit_complaintt(id):
         file_data = request.files['file'].read() if 'file' in request.files else None
 
         try:
-            complaintt = complaint(full_name=full_name, email=email, alert_type=alert_type, description=description,
+            complaint_submited = complaint(full_name=full_name, email=email, alert_type=alert_type, description=description,
                                   file_data=file_data, user_id=id)
-            db.session.add(complaintt)
+            db.session.add(complaint_submited)
             db.session.commit()
             logging.info(f"complaint submitted successfully by user ID {id}.")
-            flash("Your complaintt has been recorded. We'll get back to you soon.")
+            flash("Your complaint_submited has been recorded. We'll get back to you soon.")
             return redirect(f'/complaint/{id}')
         except Exception as e:
-            logging.error(f"Error submitting complaintt for user ID {id}: {str(e)}")
-            flash("Error recording complaintt.")
+            logging.error(f"Error submitting complaint_submited for user ID {id}: {str(e)}")
+            flash("Error recording complaint_submited.")
             return redirect(f'/complaint/{id}')
 
 @app.route('/fire-detected', methods=['POST'])
@@ -313,15 +315,17 @@ def notifications():
         flash("Error loading notifications.")
         return redirect('/dashboard')
 
-@app.route('/complaint')
+
+@app.route('/complaints')
 @login_required
-def complaint():
-    complaint = complaint.query.filter_by(user_id=current_user.id).all()
-    for complaintt in complaint:
-        if complaintt.file_data:
-            complaintt.file_data = base64.b64encode(complaintt.file_data).decode('utf-8')
-    logging.info(f"complaints accessed by user {current_user.username}.")
-    return render_template('complaint.html', complaint=complaint, user=current_user)
+def complaint_page():
+    complaints = complaint.query.filter_by(user_id=current_user.id).all()
+    for complaint_submited in complaints:
+        if complaint_submited.file_data:
+            complaint_submited.file_data = base64.b64encode(complaint_submited.file_data).decode('utf-8')
+    logging.info(f"Complaints accessed by user {current_user.username}.")
+    return render_template('complaints.html', complaints=complaints, user=current_user)
+
 
 @app.route('/complaint/<int:id>')
 def complaint_form(id):
@@ -333,18 +337,18 @@ def complaint_form(id):
 @login_required
 def delete(id):
     try:
-        complaintt = complaint.query.filter_by(id=id, user_id=current_user.id).first()
-        if complaintt:
-            db.session.delete(complaintt)
+        complaint_submited = complaint.query.filter_by(id=id, user_id=current_user.id).first()
+        if complaint_submited:
+            db.session.delete(complaint_submited)
             db.session.commit()
             flash('complaint deleted successfully!', 'success')
             logging.info(f"complaint with ID {id} deleted by user {current_user.username}.")
         else:
             flash('complaint not found or unauthorized access!', 'error')
-            logging.warning(f"Unauthorized delete attempt for complaintt ID {id} by user {current_user.username}.")
+            logging.warning(f"Unauthorized delete attempt for complaint ID {id} by user {current_user.username}.")
     except Exception as e:
-        logging.error(f"Error deleting complaintt with ID {id}: {str(e)}")
-        flash('An error occurred while deleting the complaintt!', 'error')
+        logging.error(f"Error deleting complaint with ID {id}: {str(e)}")
+        flash('An error occurred while deleting the complaint!', 'error')
     return redirect("/complaint")
 
 @app.route('/delete_notification/<int:id>')
@@ -433,6 +437,27 @@ def chatbot():
 
 #----------------------
 
+# Face authentification
+
+@app.route('/upload_employee', methods=['GET', 'POST'])
+def upload_employee_route():
+    return upload_employee()
+
+@app.route('/live_recognition')
+def live_recognition_route():
+    return live_recognition()
+
+@app.route('/manage_employees')
+def manage_employees_route():
+    return manage_employees()
+
+@app.route('/face_auth')
+def face_auth_page():
+    return render_template('face_auth.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 def add_to_db(results, frame, alert_name, user_id=None):

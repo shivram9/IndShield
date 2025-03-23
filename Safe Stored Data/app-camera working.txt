@@ -195,9 +195,9 @@ def manage_cam_page():
 @login_required
 def complaint():
     complaint = complaint.query.filter_by(user_id=current_user.id).all()
-    for complaintt in complaint:
-        if complaintt.file_data:
-            complaintt.file_data = base64.b64encode(complaintt.file_data).decode('utf-8')
+    for complaint_submited in complaint:
+        if complaint_submited.file_data:
+            complaint_submited.file_data = base64.b64encode(complaint_submited.file_data).decode('utf-8')
     return render_template('complaint.html', complaint=complaint, user=current_user)
 
 @app.route('/notifications')
