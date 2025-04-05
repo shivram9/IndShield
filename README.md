@@ -2,7 +2,10 @@
 
 **IndShield** is a web application designed to revolutionize industrial safety protocols by leveraging advanced technologies. It empowers organizations to create a safer and more secure work environment for personnel and equipment.
 
+![Screenshot 2025-04-03 190612](https://github.com/user-attachments/assets/5a2f2283-89f7-46e3-82b0-b29c6814f5b2)
 
+
+![Arc drawio (1)](https://github.com/user-attachments/assets/7da268e0-16f0-4a81-9275-78a32ad37916)
 
 **Key Features:**
 
