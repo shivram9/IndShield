@@ -7,6 +7,8 @@
 
 ![Arc drawio (1)](https://github.com/user-attachments/assets/7da268e0-16f0-4a81-9275-78a32ad37916)
 
+Video Link: https://youtu.be/SjtId9NcNLU
+
 **Key Features:**
 
 * **Motion Amplification:** Identifies subtle equipment movements often invisible to the naked eye, enabling proactive maintenance and preventing unexpected breakdowns.
