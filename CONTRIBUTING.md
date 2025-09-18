@@ -38,7 +38,7 @@ By participating in this project, you agree to maintain a **respectful and inclu
 
 ## 📜 License
 
-By contributing to this project, you agree that your contributions will be licensed under the [`Coming Soon`].
+By contributing to this project, you agree that your contributions will be licensed under the `Coming Soon`.
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
@@ -118,7 +118,7 @@ We aim to keep things smooth and transparent:
   <a href="https://docs.github.com/get-started">Getting started with Git and GitHub</a> <br>
 </p>
 
-<h3 align="center">Show some &nbsp;❤️&nbsp; by &nbsp;🌟&nbsp; this repository!</h3>
+<h4 align="center">Show some &nbsp;❤️&nbsp; by &nbsp;🌟&nbsp; this repository! </h4>
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
