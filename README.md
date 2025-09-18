@@ -1,19 +1,3 @@
-## 🏆 Featured In:
-
-<table>
-<tr>
-      <th>Event Logo</th>
-      <th>Event Name</th>
-      <th>Event Description</th>
-    </tr>
-    <tr>
-        <td><img src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png#gh-dark-mode-only" width="200" height="auto" loading="lazy" alt="GSSoC Ext 24"/></td>
-        <td>GirlScript Summer of Code Ext 2025</td>
-        <td>GSSOC Ext is a Three-month-long open-source program by the GirlScript Foundation</td> 
-    </tr>
-   <tr>
-</table>
-
 ## IndShield: A Cutting-Edge Web App for Enhanced Industrial Safety
 
 **IndShield** is a web application designed to revolutionize industrial safety protocols by leveraging advanced technologies. It empowers organizations to create a safer and more secure work environment for personnel and equipment.
@@ -65,3 +49,19 @@ python  -m venv .env
 3. Running the application using `python app.py`.
 
 Once running, users can access the web interface and leverage the provided functionalities to enhance industrial safety.
+
+## 🏆 Featured In:
+
+<table>
+<tr>
+      <th>Event Logo</th>
+      <th>Event Name</th>
+      <th>Event Description</th>
+    </tr>
+    <tr>
+        <td><img src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png#gh-dark-mode-only" width="200" height="auto" loading="lazy" alt="GSSoC Ext 24"/></td>
+        <td>GirlScript Summer of Code Ext 2025</td>
+        <td>GSSOC Ext is a Three-month-long open-source program by the GirlScript Foundation</td> 
+    </tr>
+   <tr>
+</table>
