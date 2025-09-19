@@ -16,6 +16,7 @@ li {
 }
 
 h1 {
+    color: #ffffff;
     font-weight: 600;
     font-size: 1.5rem;
 }
@@ -152,6 +153,10 @@ a.sidebar-link:hover {
     z-index: 1;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Dark Gray */
+}
 .pose-alert {
     position: absolute;
     top: 10px;
