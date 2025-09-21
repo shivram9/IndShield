@@ -87,7 +87,7 @@ TWILIO_PHONE_NUMBER=+1234567890
 ADMIN_PHONE_NUMBER=+0987654321
 GEMINI_API_KEY=your_google_gemini_key
 ```
-
+> No need to add Twilio config, it's not yet implemented.
 ---
 
 ## 5. **Prepare Database**
