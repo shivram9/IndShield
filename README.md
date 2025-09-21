@@ -44,13 +44,78 @@ Video Link: https://youtu.be/SjtId9NcNLU
 * **OpenCV:** This open-source computer vision library is likely used for image and video processing tasks like frame capturing, object detection bounding boxes, and motion amplification.
 
 Running the application typically involves:
-python  -m venv .env
-.env/Scripts/activate
-1. Installing required dependencies using `pip install -r requirements.txt`.
-2. Setting up the database (likely SQLite in this case) and creating the necessary tables as defined by the models.
-3. Running the application using `python app.py`.
 
-Once running, users can access the web interface and leverage the provided functionalities to enhance industrial safety.
+## 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/SurajSanap/IndShield.git
+cd IndShield
+```
+
+---
+
+## 2. **Set Up a Virtual Environment**
+
+```bash
+python -m venv venv
+source venv/bin/activate   # On Mac/Linux
+venv\Scripts\activate      # On Windows
+```
+
+---
+
+## 3. **Install Dependencies**
+
+The project uses Flask, OpenCV, SQLAlchemy, Twilio, etc. Install them:
+
+```bash
+pip install -r requirements.txt
+```
+
+> If you are getting error with any dependancy then just remove it's version from requirements.txt (ex. pandas == 1.22.3 -> pandas) and rerun above 'pip install -r requirements.txt'
+---
+
+## 4. **Set Up Environment Variables**
+
+Create a `.env` file in the project root with values for:
+
+```env
+FLASK_SECRET_KEY=your_secret_key
+TWILIO_ACCOUNT_SID=your_twilio_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth
+TWILIO_PHONE_NUMBER=+1234567890
+ADMIN_PHONE_NUMBER=+0987654321
+GEMINI_API_KEY=your_google_gemini_key
+```
+
+---
+
+## 5. **Prepare Database**
+
+The app uses SQLite for:
+
+* `user.db`
+* `complaint.db`
+* `cams.db`
+* `alerts.db`
+
+Run migrations:
+
+```bash
+flask db init
+flask db migrate -m "Initial migration"
+flask db upgrade
+```
+
+---
+
+## 6. **Run the App**
+
+```bash
+python app.py
+```
+
+
 
 ## 🏆 Featured In:
 
