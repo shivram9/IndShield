@@ -1,0 +1,13 @@
+fire_model: models/fire.pt
+fire_confidence: 0.99
+
+gear_model: models/gear.pt
+gear_confidence: 0.85
+gear_classes:
+  helmet: 2
+  vest: 3
+  boots: 4
+
+people_model: models/yolov8n.pt
+people_confidence: 0.45
+people_region: null

@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import cv2
+from .config_loader import load_config
 
 class gear_detection():
     """
@@ -10,9 +11,12 @@ class gear_detection():
     conf: minimum confidence to consider detection.
     
     """
-    def __init__(self,model_path,conf=0.85):
-        self.model = YOLO(model_path)
-        self.confidence = conf
+    def __init__(self, config=None):
+        if config is None:
+            config = load_config()
+        self.model = YOLO(config['gear_model'])
+        self.confidence = config.get('gear_confidence', 0.85)
+        self.class_ids = list(config.get('gear_classes', {}).values())
 
     def process(self,img,flag=True):
         """
@@ -26,8 +30,8 @@ class gear_detection():
         result=self.model(img,verbose=False)
 
         for box in result[0].boxes:
-            if((int(box.cls[0])in [2,3,4]) and (float(box.conf[0])>self.confidence)):
-                bb=list(map(int,box.xyxy[0]))
+            if int(box.cls[0]) in self.class_ids and float(box.conf[0]) > self.confidence:
+                bb = list(map(int, box.xyxy[0]))
                 bb_boxes.append(bb)
 
         if(len(bb_boxes)):
