@@ -1,7 +1,73 @@
-const hamBurger = document.querySelector(".toggle-btn");
-
-hamBurger.addEventListener("click", function () {
-  document.querySelector("#sidebar").classList.toggle("expand");
+// Unified Sidebar Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('sidebar');
+    const main = document.querySelector('.main');
+    const toggleBtn = document.querySelector('.toggle-btn');
+    
+    // Initialize sidebar state based on screen size
+    function initializeSidebar() {
+        if (window.innerWidth <= 768) {
+            // Mobile: collapsed by default
+            sidebar.classList.remove('expand');
+            main.classList.remove('sidebar-expanded');
+        } else {
+            // Desktop: expanded by default
+            sidebar.classList.add('expand');
+            main.classList.remove('sidebar-expanded');
+        }
+    }
+    
+    // Toggle sidebar function
+    function toggleSidebar() {
+        sidebar.classList.toggle('expand');
+        if (window.innerWidth <= 768) {
+            main.classList.toggle('sidebar-expanded');
+        }
+    }
+    
+    // Event listeners
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', toggleSidebar);
+    }
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        clearTimeout(window.resizeTimer);
+        window.resizeTimer = setTimeout(initializeSidebar, 250);
+    });
+    
+    // Initialize on load
+    initializeSidebar();
+    
+    // Close sidebar when clicking outside on mobile
+    if (window.innerWidth <= 768) {
+        document.addEventListener('click', function(e) {
+            if (sidebar.classList.contains('expand') && 
+                !sidebar.contains(e.target) && 
+                !toggleBtn.contains(e.target)) {
+                sidebar.classList.remove('expand');
+                main.classList.remove('sidebar-expanded');
+            }
+        });
+    }
+    
+    // Add keyboard support (ESC to close sidebar on mobile)
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && window.innerWidth <= 768 && sidebar.classList.contains('expand')) {
+            sidebar.classList.remove('expand');
+            main.classList.remove('sidebar-expanded');
+        }
+    });
+    
+    // Debug: Log sidebar state changes (remove in production)
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                console.log('Sidebar state:', sidebar.classList.contains('expand') ? 'expanded' : 'collapsed');
+            }
+        });
+    });
+    observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
 });
 
 
