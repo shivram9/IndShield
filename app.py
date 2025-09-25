@@ -40,6 +40,7 @@ from models.fire_detection import fire_detection
 from models.gear_detection import gear_detection
 from models.pose_detection import PoseEmergencyDetector
 from models.motion_amp import amp
+from models.config_loader import load_config
 
 
 
@@ -100,9 +101,10 @@ class complaint(db.Model):
 
 
 # Initialize detection models
-r_zone = people_detection("models/yolov8n.pt")
-fire_det = fire_detection("models/fire.pt", conf=0.60)
-gear_det = gear_detection("models/gear.pt")
+config = load_config()
+r_zone = people_detection(config)
+fire_det = fire_detection(config)
+gear_det = gear_detection(config)
 pose_detector = PoseEmergencyDetector()
 
 # Helper function to check file extensions

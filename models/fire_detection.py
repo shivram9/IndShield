@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import cv2
+from .config_loader import load_config
 
 class fire_detection():
     """
@@ -10,9 +11,11 @@ class fire_detection():
     conf: minimum confidence to consider detection.
     
     """
-    def __init__(self,model_path,conf=0.85):
-        self.model = YOLO(model_path)
-        self.confidence = conf
+    def __init__(self, config=None):
+        if config is None:
+            config = load_config()
+        self.model = YOLO(config['fire_model'])
+        self.confidence = config.get('fire_confidence', 0.85)
 
     def process(self,img,flag=True):
         """

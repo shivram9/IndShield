@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 import cv2
+from .config_loader import load_config
 
 class people_detection():
     """
@@ -13,12 +14,12 @@ class people_detection():
     
     """
 
-    def __init__(self,model_path,conf=0.45):
-        """
-        basic inti function
-        """
-        self.model=YOLO(model_path,verbose=False)
-        self.conf=conf
+    def __init__(self, config=None):
+        if config is None:
+            config = load_config()
+        self.model = YOLO(config['people_model'], verbose=False)
+        self.conf = config.get('people_confidence', 0.45)
+        self.region = config.get('people_region', None)
 
     def in_region(self, point):
         """
