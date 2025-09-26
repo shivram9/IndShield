@@ -3,31 +3,42 @@ document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.getElementById('sidebar');
     const main = document.querySelector('.main');
     const toggleBtn = document.querySelector('.toggle-btn');
+    const sidebarToggle = document.getElementById('sidebarToggle');
     
     // Initialize sidebar state based on screen size
     function initializeSidebar() {
         if (window.innerWidth <= 768) {
             // Mobile: collapsed by default
             sidebar.classList.remove('expand');
-            main.classList.remove('sidebar-expanded');
+            main.classList.add('sidebar-collapsed');
         } else {
             // Desktop: expanded by default
             sidebar.classList.add('expand');
-            main.classList.remove('sidebar-expanded');
+            main.classList.remove('sidebar-collapsed');
         }
     }
     
     // Toggle sidebar function
     function toggleSidebar() {
         sidebar.classList.toggle('expand');
-        if (window.innerWidth <= 768) {
-            main.classList.toggle('sidebar-expanded');
+        main.classList.toggle('sidebar-collapsed');
+        
+        // Add visual feedback
+        const icon = toggleBtn.querySelector('i');
+        if (sidebar.classList.contains('expand')) {
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            icon.style.transform = 'rotate(180deg)';
         }
     }
     
-    // Event listeners
+    // Event listeners for both toggle buttons
     if (toggleBtn) {
         toggleBtn.addEventListener('click', toggleSidebar);
+    }
+    
+    if (sidebarToggle && sidebarToggle !== toggleBtn) {
+        sidebarToggle.addEventListener('click', toggleSidebar);
     }
     
     // Handle window resize
@@ -46,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 !sidebar.contains(e.target) && 
                 !toggleBtn.contains(e.target)) {
                 sidebar.classList.remove('expand');
-                main.classList.remove('sidebar-expanded');
+                main.classList.add('sidebar-collapsed');
             }
         });
     }
@@ -55,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && window.innerWidth <= 768 && sidebar.classList.contains('expand')) {
             sidebar.classList.remove('expand');
-            main.classList.remove('sidebar-expanded');
+            main.classList.add('sidebar-collapsed');
         }
     });
     
@@ -70,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(sidebar, { attributes: true, attributeFilter: ['class'] });
 });
 
-
+// Additional functionality for Lottie animations
 document.addEventListener("DOMContentLoaded", function () {
   // Load Lottie.js for animations
   const script = document.createElement("script");

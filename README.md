@@ -115,7 +115,27 @@ flask db upgrade
 python app.py
 ```
 
+### Connecting a Camera via IP Address
 
+You can use the **[IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_IN)** app to connect your camera to the application. Follow these steps:
+
+1. **Install the App**
+   Download and install the **IP Webcam** app from the [Google Play Store](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=en_IN).
+
+2. **Configure the Camera**
+
+   * Open the app and adjust your desired settings (resolution, quality, etc.).
+   * Start the server within the app. The app will display an **IP address** (e.g., `http://192.168.1.100:8080`).
+
+3. **Connect via the Application**
+
+   * Open your application.
+   * Enter the displayed IP address and port from the app into the camera connection field.
+   * Click **Connect** to start streaming.
+
+4. **Verify the Connection**
+
+   * You should now see the live feed from your camera within the application.
 
 ## 🏆 Featured In:
 
