@@ -3,3 +3,5 @@ env
 .env
 venv
 Documentation
+app.log
+error.log
