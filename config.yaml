@@ -1,5 +1,5 @@
 fire_model: models/fire.pt
-fire_confidence: 0.99
+fire_confidence: 0.80
 
 gear_model: models/gear.pt
 gear_confidence: 0.85
