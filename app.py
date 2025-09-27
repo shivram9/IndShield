@@ -40,7 +40,7 @@ from models.fire_detection import fire_detection
 from models.gear_detection import gear_detection
 from models.pose_detection import PoseEmergencyDetector
 from models.motion_amp import amp
-from models.face_auth import generate_frames
+# from models.face_auth import generate_frames
 
 # Flask app configuration
 app = Flask(__name__)
@@ -98,9 +98,21 @@ class complaint(db.Model):
 
 
 # Initialize detection models 
-r_zone = people_detection("models/yolov8n.pt")
-fire_det = fire_detection("models/fire.pt", conf=0.60)
-gear_det = gear_detection("models/gear.pt")
+r_zone = people_detection({
+    'people_model': "models/yolov8n.pt",
+    'people_confidence': 0.45,
+    'people_region': None
+})
+fire_det = fire_detection({
+    'fire_model': "models/fire.pt",
+    'fire_confidence': 0.60
+})
+
+gear_det = gear_detection({
+    'gear_model': "models/gear.pt",
+    'gear_confidence': 0.45
+})
+
 pose_detector = PoseEmergencyDetector()
 
 # Helper function to check file extensions

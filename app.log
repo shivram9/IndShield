@@ -47919,3 +47919,296 @@ WHERE camera."Cam_id" = ? AND camera.user_id = ?
 2025-09-26 09:20:52,291 - INFO - 127.0.0.1 - - [26/Sep/2025 09:20:52] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
 2025-09-26 09:22:08,793 - INFO - 127.0.0.1 - - [26/Sep/2025 09:22:08] "GET /video_feed/10.226.97.174:8080 HTTP/1.1" 200 -
 2025-09-26 09:22:21,867 - INFO - 127.0.0.1 - - [26/Sep/2025 09:22:21] "GET /video_feed/10.226.97.174:8080 HTTP/1.1" 200 -
+2025-09-27 15:28:28,493 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:28:28,493 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:28:28,493 - DEBUG - interactive is False
+2025-09-27 15:28:28,493 - DEBUG - platform is win32
+2025-09-27 15:28:28,545 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:28:28,557 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:28:32,979 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-27 15:28:32,980 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-27 15:28:32,982 - INFO -  * Restarting with stat
+2025-09-27 15:28:34,914 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:28:34,927 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:28:34,927 - DEBUG - interactive is False
+2025-09-27 15:28:34,930 - DEBUG - platform is win32
+2025-09-27 15:28:34,977 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:28:34,981 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:28:37,837 - WARNING -  * Debugger is active!
+2025-09-27 15:28:37,843 - INFO -  * Debugger PIN: 131-563-034
+2025-09-27 15:28:37,921 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:37] "GET / HTTP/1.1" 200 -
+2025-09-27 15:28:38,079 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,087 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,087 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,087 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,093 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,095 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,095 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,096 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/css/nav-animation.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,108 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[36mGET /static/img/Smart%20Industry.json HTTP/1.1[0m" 304 -
+2025-09-27 15:28:38,532 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:38] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-09-27 15:28:39,920 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:39] "GET /login_page HTTP/1.1" 200 -
+2025-09-27 15:28:39,946 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:39] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:39,949 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:39] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:39,949 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:39] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:39,951 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:39] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:39,969 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:39] "[35m[1mGET /static/sounds/welcome_Login.mp3 HTTP/1.1[0m" 206 -
+2025-09-27 15:28:39,974 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:39] "[36mGET /static/img/blue_secuirity.json HTTP/1.1[0m" 304 -
+2025-09-27 15:28:40,043 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:40] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2025-09-27 15:28:40,048 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-27 15:28:40,053 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-27 15:28:44,383 - INFO - User Ram logged in successfully.
+2025-09-27 15:28:44,386 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-27 15:28:44,393 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:28:44,400 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:44] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:28:44,437 - INFO - Video feed accessed for camera ID 10.226.97.174:8080 by user Ram.
+2025-09-27 15:28:44,439 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:44] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:44,442 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:44] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:28:46,043 - INFO - Notifications accessed by user Ram.
+2025-09-27 15:28:46,047 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "GET /notifications HTTP/1.1" 200 -
+2025-09-27 15:28:46,070 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-27 15:28:46,072 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:46,073 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:28:46,646 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:28:46,734 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:46,737 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:28:46,738 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:28:46,738 - INFO - 127.0.0.1 - - [27/Sep/2025 15:28:46] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:29:32,276 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:29:32,278 - INFO - 127.0.0.1 - - [27/Sep/2025 15:29:32] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:29:32,303 - INFO - Video feed accessed for camera ID 10.226.97.174:8080 by user Ram.
+2025-09-27 15:29:32,305 - INFO - 127.0.0.1 - - [27/Sep/2025 15:29:32] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:29:32,305 - INFO - 127.0.0.1 - - [27/Sep/2025 15:29:32] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:29:38,892 - INFO - Notifications accessed by user Ram.
+2025-09-27 15:29:38,893 - INFO - 127.0.0.1 - - [27/Sep/2025 15:29:38] "GET /notifications HTTP/1.1" 200 -
+2025-09-27 15:29:38,921 - INFO - 127.0.0.1 - - [27/Sep/2025 15:29:38] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-27 15:29:38,923 - INFO - 127.0.0.1 - - [27/Sep/2025 15:29:38] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:29:38,924 - INFO - 127.0.0.1 - - [27/Sep/2025 15:29:38] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:30:07,158 - INFO -  * Detected change in 'S:\\CODE\\GitHub OpenSource\\IndShield\\app.py', reloading
+2025-09-27 15:30:07,908 - INFO -  * Restarting with stat
+2025-09-27 15:30:09,811 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:30:09,811 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:30:09,811 - DEBUG - interactive is False
+2025-09-27 15:30:09,811 - DEBUG - platform is win32
+2025-09-27 15:30:09,853 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:30:09,853 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:30:40,360 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:30:40,365 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:30:40,365 - DEBUG - interactive is False
+2025-09-27 15:30:40,365 - DEBUG - platform is win32
+2025-09-27 15:30:40,403 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:30:40,407 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:33:30,854 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:33:30,858 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:33:30,858 - DEBUG - interactive is False
+2025-09-27 15:33:30,859 - DEBUG - platform is win32
+2025-09-27 15:33:30,896 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:33:30,898 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:38:26,155 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:38:26,155 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:38:26,155 - DEBUG - interactive is False
+2025-09-27 15:38:26,155 - DEBUG - platform is win32
+2025-09-27 15:38:26,204 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:38:26,206 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:39:48,307 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:39:48,307 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:39:48,307 - DEBUG - interactive is False
+2025-09-27 15:39:48,307 - DEBUG - platform is win32
+2025-09-27 15:39:48,352 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:39:48,353 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:40:56,945 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:40:56,945 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:40:56,945 - DEBUG - interactive is False
+2025-09-27 15:40:56,945 - DEBUG - platform is win32
+2025-09-27 15:40:56,995 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:40:56,995 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:40:59,776 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-27 15:40:59,776 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-27 15:40:59,786 - INFO -  * Restarting with stat
+2025-09-27 15:41:01,739 - DEBUG - matplotlib data path: S:\CODE\GitHub OpenSource\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-27 15:41:01,744 - DEBUG - CONFIGDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:41:01,746 - DEBUG - interactive is False
+2025-09-27 15:41:01,746 - DEBUG - platform is win32
+2025-09-27 15:41:01,789 - DEBUG - CACHEDIR=C:\Users\Suraj\.matplotlib
+2025-09-27 15:41:01,791 - DEBUG - Using fontManager instance from C:\Users\Suraj\.matplotlib\fontlist-v330.json
+2025-09-27 15:41:04,573 - WARNING -  * Debugger is active!
+2025-09-27 15:41:04,577 - INFO -  * Debugger PIN: 131-563-034
+2025-09-27 15:41:04,651 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "GET / HTTP/1.1" 200 -
+2025-09-27 15:41:04,784 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,799 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/css/nav-animation.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,805 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,805 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,806 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,810 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,812 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,812 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,818 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[36mGET /static/img/Smart%20Industry.json HTTP/1.1[0m" 304 -
+2025-09-27 15:41:04,863 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:04] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-09-27 15:41:06,406 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "GET /login_page HTTP/1.1" 200 -
+2025-09-27 15:41:06,436 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:06,438 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:06,440 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:06,441 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:06,452 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "[35m[1mGET /static/sounds/welcome_Login.mp3 HTTP/1.1[0m" 206 -
+2025-09-27 15:41:06,452 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "[36mGET /static/img/blue_secuirity.json HTTP/1.1[0m" 304 -
+2025-09-27 15:41:06,542 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "[36mGET /static/img/favicon.png HTTP/1.1[0m" 304 -
+2025-09-27 15:41:06,591 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-27 15:41:10,117 - INFO - User Ram logged in successfully.
+2025-09-27 15:41:10,118 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-27 15:41:10,125 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:41:10,133 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:10] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:41:10,164 - INFO - Video feed accessed for camera ID 10.226.97.174:8080 by user Ram.
+2025-09-27 15:41:10,166 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:10] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:10,168 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:10] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:12,278 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:12] "GET /about HTTP/1.1" 200 -
+2025-09-27 15:41:12,299 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:12] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:12,306 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:12] "[33mGET /indshield_product_image.jpg HTTP/1.1[0m" 404 -
+2025-09-27 15:41:12,307 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:12] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:12,313 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:12] "[36mGET /static/js/about.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:12,861 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:12] "GET /chatbot HTTP/1.1" 200 -
+2025-09-27 15:41:12,938 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:12] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:12,945 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:12] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:27,884 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:41:27,885 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:27] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:41:27,908 - INFO - Video feed accessed for camera ID 10.226.97.174:8080 by user Ram.
+2025-09-27 15:41:27,910 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:27] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:27,911 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:27] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:28,446 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:28] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:41:28,477 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:28] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:28,478 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:28] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:28,479 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:28] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:41:28,479 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:28] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:29,327 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:29] "GET /about HTTP/1.1" 200 -
+2025-09-27 15:41:29,353 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:29] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:29,355 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:29] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:29,356 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:29] "[33mGET /indshield_product_image.jpg HTTP/1.1[0m" 404 -
+2025-09-27 15:41:29,364 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:29] "[36mGET /static/js/about.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:29,934 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:29] "GET /chatbot HTTP/1.1" 200 -
+2025-09-27 15:41:30,011 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:30] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:30,011 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:30] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:30,727 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:30] "GET /analytics HTTP/1.1" 200 -
+2025-09-27 15:41:30,813 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:30] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:30,815 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:30] "[36mGET /static/css/analytics.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:31,360 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:31] "GET /face_auth HTTP/1.1" 200 -
+2025-09-27 15:41:31,383 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:31] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:31,390 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:31] "[36mGET /static/css/analytics.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:31,391 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:31] "[33mGET /static/images/upload_employee.jpg HTTP/1.1[0m" 404 -
+2025-09-27 15:41:31,393 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:31] "[33mGET /static/images/manage_employees.jpg HTTP/1.1[0m" 404 -
+2025-09-27 15:41:31,397 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:31] "[33mGET /static/images/live_recognition.jpg HTTP/1.1[0m" 404 -
+2025-09-27 15:41:32,133 - INFO - Complaints accessed by user Ram.
+2025-09-27 15:41:32,141 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:32] "GET /complaints HTTP/1.1" 200 -
+2025-09-27 15:41:32,167 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:32] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:32,168 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:32] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-27 15:41:32,170 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:32] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:32,782 - INFO - Complaints accessed by user Ram.
+2025-09-27 15:41:32,782 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:32] "GET /complaints HTTP/1.1" 200 -
+2025-09-27 15:41:32,799 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:32] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-27 15:41:32,802 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:32] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:32,803 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:32] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:33,334 - INFO - Notifications accessed by user Ram.
+2025-09-27 15:41:33,337 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:33] "GET /notifications HTTP/1.1" 200 -
+2025-09-27 15:41:33,365 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:33] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-27 15:41:33,368 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:33] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:33,370 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:33] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:34,181 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:34] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:41:34,213 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:34] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:34,215 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:34] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:34,217 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:34] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:41:34,219 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:34] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:35,887 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:41:35,887 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:35] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:41:35,911 - INFO - Video feed accessed for camera ID 10.226.97.174:8080 by user Ram.
+2025-09-27 15:41:35,912 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:35] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:35,913 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:35] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:37,193 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:41:37,194 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:37] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:41:37,213 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:37] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:37,215 - INFO - Video feed accessed for camera ID 10.226.97.174:8080 by user Ram.
+2025-09-27 15:41:37,217 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:37] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:38,808 - INFO - Notifications accessed by user Ram.
+2025-09-27 15:41:38,808 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:38] "GET /notifications HTTP/1.1" 200 -
+2025-09-27 15:41:38,830 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:38] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-27 15:41:38,834 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:38] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:38,835 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:38] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:39,553 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:39] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:41:39,571 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:39] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:39,577 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:39] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:39,580 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:39] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:41:39,581 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:39] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:40,433 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:41:40,433 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:40] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:41:40,458 - INFO - Video feed accessed for camera ID 10.226.97.174:8080 by user Ram.
+2025-09-27 15:41:40,459 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:40] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:40,460 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:40] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:41:42,744 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:41:42,744 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:42] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:41:42,764 - INFO - Video feed accessed for camera ID 10.226.97.174:8080 by user Ram.
+2025-09-27 15:41:42,765 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:42] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:41:42,766 - INFO - 127.0.0.1 - - [27/Sep/2025 15:41:42] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:42:06,747 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:06] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:42:06,770 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:06] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:06,773 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:06] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:06,774 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:06] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:42:06,775 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:06] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:42:10,941 - INFO - Camera with ID 7 deleted by user Ram.
+2025-09-27 15:42:10,942 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:10] "[32mGET /delete_camera/7 HTTP/1.1[0m" 302 -
+2025-09-27 15:42:10,945 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:10] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:42:10,963 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:10] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:10,964 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:10] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:10,966 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:10] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:42:10,967 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:10] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:42:32,438 - INFO - Camera details updated for user ID 11.
+2025-09-27 15:42:32,439 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:32] "[32mPOST /get_cam_details HTTP/1.1[0m" 302 -
+2025-09-27 15:42:32,443 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:32] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:42:32,462 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:32] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:32,464 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:32] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:32,466 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:32] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:42:32,467 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:32] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:42:35,419 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:42:35,420 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:35] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:42:35,445 - INFO - Video feed accessed for camera ID 10.225.231.18:8080 by user Ram.
+2025-09-27 15:42:35,448 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:35] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:35,448 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:35] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:42:38,293 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:38] "GET /video_feed/10.225.231.18:8080 HTTP/1.1" 200 -
+2025-09-27 15:42:39,881 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:39] "GET /video_feed/10.226.97.174:8080 HTTP/1.1" 200 -
+2025-09-27 15:42:55,803 - WARNING - No frames received from camera ID 10.225.231.18:8080.
+2025-09-27 15:42:57,482 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:57] "GET /video_feed/10.226.97.174:8080 HTTP/1.1" 200 -
+2025-09-27 15:42:59,312 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:59] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:42:59,335 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:59] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:59,337 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:59] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:42:59,339 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:59] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:42:59,342 - INFO - 127.0.0.1 - - [27/Sep/2025 15:42:59] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:43:05,497 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:05] "GET /video_feed/10.226.97.174:8080 HTTP/1.1" 200 -
+2025-09-27 15:43:09,970 - INFO - Camera details updated for user ID 11.
+2025-09-27 15:43:09,970 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:09] "[32mPOST /get_cam_details HTTP/1.1[0m" 302 -
+2025-09-27 15:43:09,974 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:09] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-27 15:43:09,996 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:09] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-27 15:43:09,996 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:09] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:43:09,997 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:09] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-27 15:43:10,000 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:10] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:43:12,060 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:43:12,060 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:12] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:43:12,082 - INFO - Video feed accessed for camera ID 10.225.231.18:8080 by user Ram.
+2025-09-27 15:43:12,085 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:12] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:43:12,085 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:12] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:43:14,102 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:14] "GET /video_feed/10.225.231.18:8080 HTTP/1.1" 200 -
+2025-09-27 15:43:18,516 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:18] "GET /video_feed/10.226.97.174:8080 HTTP/1.1" 200 -
+2025-09-27 15:43:18,517 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:18] "GET /video_feed/10.226.97.174:8080 HTTP/1.1" 200 -
+2025-09-27 15:43:19,023 - WARNING - No frames received from camera ID 10.225.231.18:8080.
+2025-09-27 15:43:19,048 - INFO - 127.0.0.1 - - [27/Sep/2025 15:43:19] "GET /video_feed/10.226.97.174:8080 HTTP/1.1" 200 -
+2025-09-27 15:44:55,078 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:44:55,079 - INFO - 127.0.0.1 - - [27/Sep/2025 15:44:55] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:44:55,100 - INFO - 127.0.0.1 - - [27/Sep/2025 15:44:55] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:44:55,102 - INFO - 127.0.0.1 - - [27/Sep/2025 15:44:55] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:44:55,105 - INFO - Video feed accessed for camera ID 10.225.231.18:8080 by user Ram.
+2025-09-27 15:45:00,591 - INFO - 127.0.0.1 - - [27/Sep/2025 15:45:00] "GET /video_feed/10.225.231.18:8080 HTTP/1.1" 200 -
+2025-09-27 15:45:27,420 - INFO - Dashboard accessed by user Ram.
+2025-09-27 15:45:27,421 - INFO - 127.0.0.1 - - [27/Sep/2025 15:45:27] "GET /dashboard HTTP/1.1" 200 -
+2025-09-27 15:45:27,437 - INFO - 127.0.0.1 - - [27/Sep/2025 15:45:27] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-27 15:45:27,439 - INFO - Video feed accessed for camera ID 10.225.231.18:8080 by user Ram.
+2025-09-27 15:45:27,441 - INFO - 127.0.0.1 - - [27/Sep/2025 15:45:27] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-27 15:45:27,947 - INFO - 127.0.0.1 - - [27/Sep/2025 15:45:27] "GET /video_feed/10.225.231.18:8080 HTTP/1.1" 200 -
+2025-09-27 15:45:46,803 - WARNING - No frames received from camera ID 10.225.231.18:8080.
+2025-09-27 15:54:39,798 - INFO -  * Detected change in 'S:\\CODE\\GitHub OpenSource\\IndShield\\app.py', reloading
