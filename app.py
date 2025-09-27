@@ -29,7 +29,7 @@ logging.basicConfig(
     ]
 )
 
-# Twilio client setup
+# Twilio client setup 
 account_sid = os.getenv('TWILIO_ACCOUNT_SID')
 auth_token = os.getenv('TWILIO_AUTH_TOKEN')
 client = Client(account_sid, auth_token)
@@ -40,22 +40,19 @@ from models.fire_detection import fire_detection
 from models.gear_detection import gear_detection
 from models.pose_detection import PoseEmergencyDetector
 from models.motion_amp import amp
-from models.config_loader import load_config
-
-
-
+from models.face_auth import generate_frames
 
 # Flask app configuration
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY')
+app.config['SECRET_KEY'] = os.getenv('FLASK_SECRET_KEY') or 'indshield_fallback_secret_key_2025'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user.db'
 app.config["SQLALCHEMY_BINDS"] = {
     "complaint": "sqlite:///complaint.db",
     "cams": "sqlite:///cams.db",
     "alerts": "sqlite:///alerts.db"
 }
-app.config['UPLOAD_FOLDER'] = 'uploads'
-ALLOWED_EXTENSIONS = {"mp4"}
+app.config['UPLOAD_FOLDER'] = 'uploads'  
+ALLOWED_EXTENSIONS = {"mp4"}  
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
@@ -100,11 +97,10 @@ class complaint(db.Model):
     file_data = db.Column(db.LargeBinary)
 
 
-# Initialize detection models
-config = load_config()
-r_zone = people_detection(config)
-fire_det = fire_detection(config)
-gear_det = gear_detection(config)
+# Initialize detection models 
+r_zone = people_detection("models/yolov8n.pt")
+fire_det = fire_detection("models/fire.pt", conf=0.60)
+gear_det = gear_detection("models/gear.pt")
 pose_detector = PoseEmergencyDetector()
 
 # Helper function to check file extensions
@@ -437,10 +433,61 @@ API_KEY = os.getenv("GEMINI_API_KEY")
 def chatbot():
     return render_template('chatbot.html') 
 
+@app.route('/chatbot/api', methods=['POST'])
+def chatbot_api():
+    """Handle chatbot API requests with proper error handling for quota issues"""
+    try:
+        data = request.get_json()
+        user_message = data.get('message', '')
+        
+        if not user_message:
+            return jsonify({'error': 'No message provided'}), 400
+            
+        if not API_KEY or API_KEY == 'your_google_gemini_key':
+            return jsonify({
+                'error': 'Gemini API key not configured. Please set up your API key in the .env file.',
+                'fallback_response': 'I am IndShield AI assistant. I can help you with:\n- Understanding the safety monitoring features\n- Explaining motion detection and fire safety\n- Providing information about restricted zones\n- Assistance with face recognition systems\n\nHowever, the AI functionality requires a valid Gemini API key to be configured.'
+            }), 200
+            
+        # Import and use Gemini API
+        import google.generativeai as genai
+        genai.configure(api_key=API_KEY)
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        
+        # Create context about IndShield
+        context = """
+        You are an AI assistant for IndShield, an industrial safety monitoring web application. 
+        IndShield features include:
+        - Motion Amplification: Detecting subtle equipment movements for predictive maintenance
+        - Emergency Alert System: Hand gesture detection (L pose) for emergency alerts
+        - Restricted Zone Enforcement: Monitoring unauthorized access to restricted areas
+        - Fire and Safety Gear Detection: Real-time detection of safety equipment and fire hazards
+        
+        Answer questions about these features, industrial safety, and how to use the application.
+        """
+        
+        prompt = f"{context}\n\nUser question: {user_message}"
+        response = model.generate_content(prompt)
+        
+        return jsonify({'response': response.text})
+        
+    except Exception as e:
+        error_msg = str(e)
+        
+        # Handle specific quota errors
+        if "quota" in error_msg.lower() or "429" in error_msg:
+            return jsonify({
+                'error': 'API quota exceeded. Please try again later or check your Gemini API billing.',
+                'fallback_response': f'I am IndShield AI assistant. Due to API limitations, I cannot provide AI responses right now. However, I can tell you that IndShield helps with:\n\n• Motion Detection for equipment monitoring\n• Emergency alerts through gesture recognition\n• Restricted zone access control\n• Fire and safety gear detection\n\nFor specific questions about the system, please refer to the documentation or contact support.'
+            }), 200
+        else:
+            return jsonify({
+                'error': f'An error occurred: {error_msg}',
+                'fallback_response': 'I apologize, but I cannot process your request right now. IndShield is an industrial safety monitoring system with features for motion detection, emergency alerts, zone monitoring, and safety compliance.'
+            }), 500
+
 #----------------------
-
-# Face authentification
-
+# Face authentication routes 
 @app.route('/upload_employee', methods=['GET', 'POST'])
 def upload_employee_route():
     return upload_employee()
@@ -462,6 +509,7 @@ def about():
     return render_template('about.html')
 
 
+# ML processing functions
 def add_to_db(results, frame, alert_name, user_id=None):
     if isinstance(results[0], bool) and results[0]:
         for box in results[1]:
@@ -574,6 +622,221 @@ def process_frames(camid, region, flag_r_zone=False, flag_pose_alert=False, flag
             continue
 
     cap.release()
+
+# Gemini API routes for chatbot functionality
+def test_gemini_endpoints(api_key, test_message="Hello", max_tokens=2048):
+    """Test different Gemini API endpoints to find the working one"""
+    endpoints = [
+        'https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent',
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent',
+        'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent',
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent'
+    ]
+    
+    headers = {'Content-Type': 'application/json'}
+    payload = {
+        'contents': [{'parts': [{'text': test_message}]}],
+        'generationConfig': {
+            'temperature': 0.7,
+            'topK': 40,
+            'topP': 0.95,
+            'maxOutputTokens': max_tokens
+        }
+    }
+    
+    for endpoint in endpoints:
+        try:
+            url = f"{endpoint}?key={api_key}"
+            response = requests.post(url, headers=headers, json=payload, timeout=15)
+            if response.status_code == 200:
+                return endpoint, response
+        except:
+            continue
+    
+    return None, None
+
+@app.route('/test_gemini_api', methods=['POST'])
+def test_gemini_api():
+    """Test Gemini API connection with endpoint discovery"""
+    try:
+        data = request.get_json()
+        api_key = data.get('api_key')
+        message = data.get('message', 'Hello, this is a connection test.')
+        
+        if not api_key:
+            return jsonify({'success': False, 'error': 'API key is required'})
+        
+        # Try to find a working endpoint
+        working_endpoint, response = test_gemini_endpoints(api_key, message)
+        
+        if working_endpoint and response:
+            data = response.json()
+            if 'candidates' in data and len(data['candidates']) > 0:
+                # Store the working endpoint in session or return it
+                return jsonify({
+                    'success': True, 
+                    'message': 'API connection successful',
+                    'endpoint': working_endpoint
+                })
+            else:
+                return jsonify({'success': False, 'error': 'API returned empty response'})
+        else:
+            return jsonify({
+                'success': False, 
+                'error': 'Unable to connect to any Gemini API endpoint. This could mean:\n1. Gemini API is not available in your region\n2. Your API key is invalid or expired\n3. API quotas are exceeded\n4. Network connectivity issues\n\nPlease try:\n- Regenerating your API key\n- Using a VPN if in an unsupported region\n- Checking Google Cloud Console for API status'
+            })
+            
+    except requests.exceptions.Timeout:
+        return jsonify({'success': False, 'error': 'Request timed out. Please check your internet connection.'})
+    except requests.exceptions.ConnectionError:
+        return jsonify({'success': False, 'error': 'Unable to connect to Gemini API. Please check your internet connection.'})
+    except Exception as e:
+        logging.error(f"Gemini API test error: {e}")
+        return jsonify({'success': False, 'error': f'Connection failed: {str(e)}'})
+
+@app.route('/chat_with_gemini', methods=['POST'])
+def chat_with_gemini():
+    """Handle chat requests with Gemini API"""
+    try:
+        data = request.get_json()
+        api_key = data.get('api_key')
+        user_message = data.get('message')
+        conversation_history = data.get('conversation_history', [])
+        
+        if not api_key or not user_message:
+            return jsonify({'success': False, 'error': 'API key and message are required'})
+        
+        # System prompt with IndShield information
+        system_prompt = """You are the IndShield AI Assistant, an expert on industrial safety and the IndShield web application. IndShield is a cutting-edge web application designed to revolutionize industrial safety protocols using advanced technologies.
+
+Key Features of IndShield:
+- Motion Amplification: Identifies subtle equipment movements invisible to the naked eye for proactive maintenance
+- Emergency Alert System: Detects specific gestures (L pose) for emergency assistance
+- Restricted Zone Enforcement: Uses CCTV feeds and object detection to monitor unauthorized access
+- Fire and Safety Gear Detection: Employs machine learning to identify safety gear and fire risks in real-time
+- Live Recognition: Real-time employee face recognition for access control and safety monitoring
+
+Technologies Used:
+- Backend: Flask (Python web framework)
+- Database: SQLAlchemy ORM with SQLite
+- Machine Learning: YOLOv8 for object detection
+- Computer Vision: OpenCV for image/video processing
+- Face Recognition: Custom OpenCV-based face detection system
+- Frontend: Bootstrap 5, modern CSS with glass morphism design
+
+Benefits:
+- Early detection of potential issues to minimize downtime
+- Enhanced maintenance and equipment optimization
+- Reduced risk of accidents through safety protocol enforcement  
+- Improved emergency response times
+
+You should provide helpful, accurate information about IndShield's features, troubleshooting, setup instructions, and industrial safety best practices. Always maintain a professional and helpful tone."""
+        
+        # Build a more structured message for better responses
+        context_message = f"""You are the IndShield AI Assistant, an expert on industrial safety and the IndShield web application. 
+
+IndShield is a cutting-edge web application designed to revolutionize industrial safety protocols using advanced technologies.
+
+Key Features of IndShield:
+- Motion Amplification: Identifies subtle equipment movements invisible to the naked eye for proactive maintenance
+- Emergency Alert System: Detects specific gestures (L pose) for emergency assistance  
+- Restricted Zone Enforcement: Uses CCTV feeds and object detection to monitor unauthorized access
+- Fire and Safety Gear Detection: Employs machine learning to identify safety gear and fire risks in real-time
+- Live Recognition: Real-time employee face recognition for access control and safety monitoring
+
+Technologies Used:
+- Backend: Flask (Python web framework)
+- Database: SQLAlchemy ORM with SQLite
+- Machine Learning: YOLOv8 for object detection
+- Computer Vision: OpenCV for image/video processing
+- Face Recognition: Custom OpenCV-based face detection system
+- Frontend: Bootstrap 5, modern CSS with glass morphism design
+
+Please provide helpful, accurate information about IndShield's features, troubleshooting, setup instructions, and industrial safety best practices. Always maintain a professional and helpful tone.
+
+User question: {user_message}
+
+Please provide a complete and detailed response:"""
+        
+        # Try to find a working endpoint for the chat with higher token limit
+        working_endpoint, response = test_gemini_endpoints(api_key, context_message, max_tokens=2048)
+        
+        if working_endpoint and response and response.status_code == 200:
+            result = response.json()
+            if 'candidates' in result and len(result['candidates']) > 0:
+                bot_response = result['candidates'][0]['content']['parts'][0]['text']
+                return jsonify({
+                    'success': True, 
+                    'response': bot_response
+                })
+            else:
+                return jsonify({'success': False, 'error': 'No response generated from API'})
+        else:
+            return jsonify({
+                'success': False, 
+                'error': 'Unable to connect to Gemini API. Please check your API key and internet connection.'
+            })
+            
+    except requests.exceptions.Timeout:
+        return jsonify({'success': False, 'error': 'Request timed out. Please try again.'})
+    except requests.exceptions.ConnectionError:
+        return jsonify({'success': False, 'error': 'Unable to connect to Gemini API. Please check your internet connection.'})
+    except Exception as e:
+        logging.error(f"Gemini API chat error: {e}")
+        return jsonify({'success': False, 'error': f'Chat request failed: {str(e)}'})
+
+@app.route('/debug_gemini', methods=['POST'])
+def debug_gemini():
+    """Debug route to test different Gemini API configurations"""
+    try:
+        data = request.get_json()
+        api_key = data.get('api_key')
+        
+        if not api_key:
+            return jsonify({'success': False, 'error': 'API key is required'})
+        
+        debug_info = []
+        
+        # Test different endpoints
+        endpoints = [
+            ('v1/gemini-pro', 'https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent'),
+            ('v1beta/gemini-pro', 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent'),
+            ('v1/gemini-1.5-flash', 'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent'),
+            ('v1beta/gemini-1.5-flash', 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent')
+        ]
+        
+        headers = {'Content-Type': 'application/json'}
+        payload = {
+            'contents': [{'parts': [{'text': 'Hello, this is a test.'}]}],
+            'generationConfig': {'temperature': 0.7, 'maxOutputTokens': 100}
+        }
+        
+        for name, endpoint in endpoints:
+            try:
+                url = f"{endpoint}?key={api_key}"
+                response = requests.post(url, headers=headers, json=payload, timeout=10)
+                debug_info.append({
+                    'endpoint': name,
+                    'status_code': response.status_code,
+                    'success': response.status_code == 200,
+                    'error': response.text if response.status_code != 200 else None
+                })
+            except Exception as e:
+                debug_info.append({
+                    'endpoint': name,
+                    'status_code': None,
+                    'success': False,
+                    'error': str(e)
+                })
+        
+        return jsonify({
+            'success': True,
+            'debug_info': debug_info,
+            'api_key_prefix': api_key[:10] + '...' if len(api_key) > 10 else api_key
+        })
+        
+    except Exception as e:
+        return jsonify({'success': False, 'error': f'Debug failed: {str(e)}'})
 
 if __name__ == "__main__":
     app.run(debug=True)
