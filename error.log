@@ -48902,3 +48902,299 @@ WHERE camera."Cam_id" = ? AND camera.user_id = ?
 2025-09-29 17:39:01,225 - INFO - complaint form accessed for user ID 14.
 2025-09-29 17:39:01,227 - INFO - 127.0.0.1 - - [29/Sep/2025 17:39:01] "GET /complaint/14 HTTP/1.1" 200 -
 2025-09-29 17:39:01,331 - INFO - 127.0.0.1 - - [29/Sep/2025 17:39:01] "[33mGET /static/css/complaint.css HTTP/1.1[0m" 404 -
+2025-09-29 17:41:02,321 - DEBUG - matplotlib data path: C:\Users\DELL\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-29 17:41:02,331 - DEBUG - CONFIGDIR=C:\Users\DELL\.matplotlib
+2025-09-29 17:41:02,336 - DEBUG - interactive is False
+2025-09-29 17:41:02,336 - DEBUG - platform is win32
+2025-09-29 17:41:02,431 - DEBUG - CACHEDIR=C:\Users\DELL\.matplotlib
+2025-09-29 17:41:02,441 - DEBUG - Using fontManager instance from C:\Users\DELL\.matplotlib\fontlist-v330.json
+2025-09-29 17:41:09,018 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-29 17:41:09,019 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-29 17:41:09,022 - INFO -  * Restarting with stat
+2025-09-29 17:41:14,131 - DEBUG - matplotlib data path: C:\Users\DELL\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-29 17:41:14,144 - DEBUG - CONFIGDIR=C:\Users\DELL\.matplotlib
+2025-09-29 17:41:14,151 - DEBUG - interactive is False
+2025-09-29 17:41:14,151 - DEBUG - platform is win32
+2025-09-29 17:41:14,251 - DEBUG - CACHEDIR=C:\Users\DELL\.matplotlib
+2025-09-29 17:41:14,251 - DEBUG - Using fontManager instance from C:\Users\DELL\.matplotlib\fontlist-v330.json
+2025-09-29 17:41:21,346 - WARNING -  * Debugger is active!
+2025-09-29 17:41:21,350 - INFO -  * Debugger PIN: 134-175-910
+2025-09-29 17:41:29,089 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "GET / HTTP/1.1" 200 -
+2025-09-29 17:41:29,162 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,162 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,182 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,185 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,189 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,191 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,203 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,206 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/css/nav-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,234 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[36mGET /static/img/Smart%20Industry.json HTTP/1.1[0m" 304 -
+2025-09-29 17:41:29,795 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:29] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-09-29 17:41:30,855 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:30] "GET /login_page HTTP/1.1" 200 -
+2025-09-29 17:41:30,919 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:30] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:30,934 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:30] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:30,957 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:30] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:30,968 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:30] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:30,988 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:30] "[35m[1mGET /static/sounds/welcome_Login.mp3 HTTP/1.1[0m" 206 -
+2025-09-29 17:41:31,024 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:31] "[36mGET /static/img/blue_secuirity.json HTTP/1.1[0m" 304 -
+2025-09-29 17:41:31,209 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-29 17:41:34,437 - INFO - User Shivram  logged in successfully.
+2025-09-29 17:41:34,439 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-29 17:41:34,456 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:41:34,456 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:34] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:41:34,532 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:34] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:34,533 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:34] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:41:36,145 - INFO - Complaints accessed by user Shivram .
+2025-09-29 17:41:36,147 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:36] "GET /complaints HTTP/1.1" 200 -
+2025-09-29 17:41:36,187 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:36] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-29 17:41:36,190 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:36] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:41:36,194 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:36] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:41:38,841 - INFO - complaint form accessed for user ID 14.
+2025-09-29 17:41:38,842 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:38] "GET /complaint/14 HTTP/1.1" 200 -
+2025-09-29 17:41:38,877 - INFO - 127.0.0.1 - - [29/Sep/2025 17:41:38] "[33mGET /static/css/complaint.css HTTP/1.1[0m" 404 -
+2025-09-29 17:50:42,002 - DEBUG - matplotlib data path: C:\Users\DELL\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-29 17:50:42,010 - DEBUG - CONFIGDIR=C:\Users\DELL\.matplotlib
+2025-09-29 17:50:42,012 - DEBUG - interactive is False
+2025-09-29 17:50:42,012 - DEBUG - platform is win32
+2025-09-29 17:50:42,107 - DEBUG - CACHEDIR=C:\Users\DELL\.matplotlib
+2025-09-29 17:50:42,112 - DEBUG - Using fontManager instance from C:\Users\DELL\.matplotlib\fontlist-v330.json
+2025-09-29 17:50:50,307 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-29 17:50:50,307 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-29 17:50:50,311 - INFO -  * Restarting with stat
+2025-09-29 17:50:52,523 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "GET / HTTP/1.1" 200 -
+2025-09-29 17:50:52,595 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,597 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,609 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,620 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,624 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,637 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,644 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/css/nav-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,657 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,682 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[36mGET /static/img/Smart%20Industry.json HTTP/1.1[0m" 304 -
+2025-09-29 17:50:52,825 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:52] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-09-29 17:50:55,038 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:55] "GET /login_page HTTP/1.1" 200 -
+2025-09-29 17:50:55,101 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:55] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:55,104 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:55] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:55,108 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:55] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:55,124 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:55] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:55,140 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:55] "[35m[1mGET /static/sounds/welcome_Login.mp3 HTTP/1.1[0m" 206 -
+2025-09-29 17:50:55,144 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:55] "[36mGET /static/img/blue_secuirity.json HTTP/1.1[0m" 304 -
+2025-09-29 17:50:55,300 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-29 17:50:56,385 - DEBUG - matplotlib data path: C:\Users\DELL\IndShield\venv\Lib\site-packages\matplotlib\mpl-data
+2025-09-29 17:50:56,407 - DEBUG - CONFIGDIR=C:\Users\DELL\.matplotlib
+2025-09-29 17:50:56,411 - DEBUG - interactive is False
+2025-09-29 17:50:56,411 - DEBUG - platform is win32
+2025-09-29 17:50:56,571 - DEBUG - CACHEDIR=C:\Users\DELL\.matplotlib
+2025-09-29 17:50:56,577 - DEBUG - Using fontManager instance from C:\Users\DELL\.matplotlib\fontlist-v330.json
+2025-09-29 17:50:58,902 - INFO - User Shivram  logged in successfully.
+2025-09-29 17:50:58,902 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-29 17:50:58,927 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:50:59,183 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:59] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:50:59,258 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:59] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:50:59,259 - INFO - 127.0.0.1 - - [29/Sep/2025 17:50:59] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:03,355 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:03] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:03,389 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:03] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:03,396 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:03] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:03,398 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:03] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:03,404 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:03] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:04,158 - WARNING -  * Debugger is active!
+2025-09-29 17:51:04,163 - INFO -  * Debugger PIN: 134-175-910
+2025-09-29 17:51:07,235 - INFO - Camera details updated for user ID 14.
+2025-09-29 17:51:07,235 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:07] "[32mPOST /get_cam_details HTTP/1.1[0m" 302 -
+2025-09-29 17:51:07,251 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:07] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:07,291 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:07] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:07,291 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:07] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:07,293 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:07] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:07,297 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:07] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:09,338 - INFO - Camera with ID 8 deleted by user Shivram .
+2025-09-29 17:51:09,340 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:09] "[32mGET /delete_camera/8 HTTP/1.1[0m" 302 -
+2025-09-29 17:51:09,354 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:09] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:09,398 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:09] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:09,403 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:09] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:09,410 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:09] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:09,412 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:09] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:17,389 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:51:17,390 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:17] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:51:17,438 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:17] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:17,441 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:17] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:38,954 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:38] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:38,994 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:38] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:39,005 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:39] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:39,006 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:39] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:39,011 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:39] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:44,584 - INFO - Camera details updated for user ID 14.
+2025-09-29 17:51:44,585 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:44] "[32mPOST /get_cam_details HTTP/1.1[0m" 302 -
+2025-09-29 17:51:44,592 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:44] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:44,624 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:44] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:44,636 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:44] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:44,641 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:44] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:44,642 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:44] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:45,999 - INFO - Camera with ID 8 deleted by user Shivram .
+2025-09-29 17:51:46,001 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:46] "[32mGET /delete_camera/8 HTTP/1.1[0m" 302 -
+2025-09-29 17:51:46,010 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:46] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:46,043 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:46] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:46,048 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:46] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:46,050 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:46] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:46,053 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:46] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:47,752 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:47] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:47,784 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:47] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:47,785 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:47] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:47,788 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:47] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:47,791 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:47] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:48,610 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:48,643 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:48,647 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:48,651 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:48,656 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:48,804 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:48,841 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:48,841 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:48,843 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:48,855 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:48] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:49,374 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:49,408 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:49,411 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:49,424 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:49,426 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:49,563 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:51:49,603 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:49,607 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:49,610 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:51:49,621 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:49] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:50,363 - INFO - Notifications accessed by user Shivram .
+2025-09-29 17:51:50,365 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:50] "GET /notifications HTTP/1.1" 200 -
+2025-09-29 17:51:50,407 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:50] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-29 17:51:50,412 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:50] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:50,413 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:50] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:54,144 - INFO - Complaints accessed by user Shivram .
+2025-09-29 17:51:54,146 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:54] "GET /complaints HTTP/1.1" 200 -
+2025-09-29 17:51:54,198 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:54] "[33mGET /static/css/notifications_complaint.css HTTP/1.1[0m" 404 -
+2025-09-29 17:51:54,206 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:54] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:54,210 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:54] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:51:56,169 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:56] "GET /face_auth HTTP/1.1" 200 -
+2025-09-29 17:51:56,212 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:56] "[33mGET /static/images/upload_employee.jpg HTTP/1.1[0m" 404 -
+2025-09-29 17:51:56,219 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:56] "[36mGET /static/css/analytics.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:56,221 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:56] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:51:56,224 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:56] "[33mGET /static/images/manage_employees.jpg HTTP/1.1[0m" 404 -
+2025-09-29 17:51:56,238 - INFO - 127.0.0.1 - - [29/Sep/2025 17:51:56] "[33mGET /static/images/live_recognition.jpg HTTP/1.1[0m" 404 -
+2025-09-29 17:52:03,811 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:52:03,811 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:03] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:52:03,859 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:03] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:03,860 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:03] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:07,335 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:07] "GET /analytics HTTP/1.1" 200 -
+2025-09-29 17:52:07,378 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:07] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:07,380 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:07] "[36mGET /static/css/analytics.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:08,475 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:08] "GET /chatbot HTTP/1.1" 200 -
+2025-09-29 17:52:08,539 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:08] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:08,548 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:08] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:09,419 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:09] "GET /about HTTP/1.1" 200 -
+2025-09-29 17:52:09,461 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:09] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:09,466 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:09] "[33mGET /indshield_product_image.jpg HTTP/1.1[0m" 404 -
+2025-09-29 17:52:09,467 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:09] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:09,482 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:09] "[36mGET /static/js/about.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:10,321 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:10] "GET /analytics HTTP/1.1" 200 -
+2025-09-29 17:52:10,367 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:10] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:10,371 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:10] "[36mGET /static/css/analytics.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:10,664 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:10] "GET /chatbot HTTP/1.1" 200 -
+2025-09-29 17:52:10,731 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:10] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:10,742 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:10] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:14,352 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:14] "GET /about HTTP/1.1" 200 -
+2025-09-29 17:52:14,405 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:14] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:14,412 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:14] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:14,419 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:14] "[33mGET /indshield_product_image.jpg HTTP/1.1[0m" 404 -
+2025-09-29 17:52:14,430 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:14] "[36mGET /static/js/about.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:17,250 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:52:17,251 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:17] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:52:17,297 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:17] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:17,300 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:17] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:19,110 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:19] "GET /about HTTP/1.1" 200 -
+2025-09-29 17:52:19,162 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:19] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:19,171 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:19] "[33mGET /indshield_product_image.jpg HTTP/1.1[0m" 404 -
+2025-09-29 17:52:19,172 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:19] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:19,177 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:19] "[36mGET /static/js/about.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:20,171 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:20] "GET /about HTTP/1.1" 200 -
+2025-09-29 17:52:20,198 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:20] "[36mGET /static/css/about.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:20,208 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:20] "[33mGET /indshield_product_image.jpg HTTP/1.1[0m" 404 -
+2025-09-29 17:52:20,209 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:20] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:20,219 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:20] "[36mGET /static/js/about.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:20,730 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:20] "GET /chatbot HTTP/1.1" 200 -
+2025-09-29 17:52:20,770 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:20] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:20,775 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:20] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:52:25,791 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:52:25,791 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:25] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:52:25,848 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:25] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:52:25,855 - INFO - 127.0.0.1 - - [29/Sep/2025 17:52:25] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,706 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "GET / HTTP/1.1" 200 -
+2025-09-29 17:54:32,774 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,789 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,789 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,794 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,804 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,807 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/css/nav-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,822 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,837 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,856 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[36mGET /static/img/Smart%20Industry.json HTTP/1.1[0m" 304 -
+2025-09-29 17:54:32,973 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:32] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-09-29 17:54:35,470 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:35] "GET /login_page HTTP/1.1" 200 -
+2025-09-29 17:54:35,534 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:35] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:35,544 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:35] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:35,549 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:35] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:35,549 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:35] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:35,567 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:35] "[35m[1mGET /static/sounds/welcome_Login.mp3 HTTP/1.1[0m" 206 -
+2025-09-29 17:54:35,575 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:35] "[36mGET /static/img/blue_secuirity.json HTTP/1.1[0m" 304 -
+2025-09-29 17:54:35,703 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-29 17:54:45,287 - INFO - User Shivram  logged in successfully.
+2025-09-29 17:54:45,289 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-29 17:54:45,302 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:54:45,407 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:45] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:54:45,469 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:45] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:54:45,470 - INFO - 127.0.0.1 - - [29/Sep/2025 17:54:45] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:55:00,214 - INFO - 127.0.0.1 - - [29/Sep/2025 17:55:00] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:55:00,252 - INFO - 127.0.0.1 - - [29/Sep/2025 17:55:00] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:55:00,258 - INFO - 127.0.0.1 - - [29/Sep/2025 17:55:00] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:55:00,261 - INFO - 127.0.0.1 - - [29/Sep/2025 17:55:00] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:55:00,265 - INFO - 127.0.0.1 - - [29/Sep/2025 17:55:00] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:55:02,410 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:55:02,411 - INFO - 127.0.0.1 - - [29/Sep/2025 17:55:02] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:55:02,451 - INFO - 127.0.0.1 - - [29/Sep/2025 17:55:02] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:55:02,453 - INFO - 127.0.0.1 - - [29/Sep/2025 17:55:02] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,098 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "GET / HTTP/1.1" 200 -
+2025-09-29 17:56:59,203 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/css/style1.css HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,216 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/css/style2.css HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,220 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,247 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,255 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,255 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,256 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,256 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/css/nav-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,294 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[36mGET /static/img/Smart%20Industry.json HTTP/1.1[0m" 304 -
+2025-09-29 17:56:59,397 - INFO - 127.0.0.1 - - [29/Sep/2025 17:56:59] "[35m[1mGET /static/img/motionamp.mp4 HTTP/1.1[0m" 206 -
+2025-09-29 17:57:01,238 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:01] "GET /login_page HTTP/1.1" 200 -
+2025-09-29 17:57:01,295 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:01] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:01,299 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:01] "[36mGET /static/css/dark-theme.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:01,304 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:01] "[36mGET /static/css/glass-spark.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:01,305 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:01] "[36mGET /static/css/text-animation.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:01,322 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:01] "[35m[1mGET /static/sounds/welcome_Login.mp3 HTTP/1.1[0m" 206 -
+2025-09-29 17:57:01,331 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:01] "[36mGET /static/img/blue_secuirity.json HTTP/1.1[0m" 304 -
+2025-09-29 17:57:01,440 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-29 17:57:04,766 - INFO - User Shivram  logged in successfully.
+2025-09-29 17:57:04,771 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-09-29 17:57:04,780 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:57:04,859 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:04] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:57:04,913 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:04] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:04,914 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:04] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:57:52,576 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:52] "GET /manage_camera HTTP/1.1" 200 -
+2025-09-29 17:57:52,619 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:52] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:52,631 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:52] "[36mGET /static/css/manage_cam.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:52,640 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:52] "[36mGET /static/img/manage_Cam_bg.png HTTP/1.1[0m" 304 -
+2025-09-29 17:57:52,642 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:52] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:57:54,116 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:57:54,152 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:54] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:57:54,194 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:54] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:54,195 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:54] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
+2025-09-29 17:57:57,431 - INFO - Dashboard accessed by user Shivram .
+2025-09-29 17:57:57,434 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:57] "GET /dashboard HTTP/1.1" 200 -
+2025-09-29 17:57:57,478 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:57] "[36mGET /static/css/style_dash.css HTTP/1.1[0m" 304 -
+2025-09-29 17:57:57,480 - INFO - 127.0.0.1 - - [29/Sep/2025 17:57:57] "[36mGET /static/js/script_dash.js HTTP/1.1[0m" 304 -
